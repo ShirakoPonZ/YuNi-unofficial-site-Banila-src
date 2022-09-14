@@ -1,0 +1,9 @@
+.ClipsContainer{
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: 310px 310px 310px;
+
+    @media (max-width: 1000px){
+        grid-template-columns: 45vw;
+    }
+}

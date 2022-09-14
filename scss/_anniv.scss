@@ -1,0 +1,18 @@
+.annivContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .ilandImage{
+        width: 40vw;
+        img{
+            width: 100%;
+        }
+    }
+
+    #participationList{
+        display: grid;
+        justify-content: space-evenly;
+        grid-template-columns: 160px 160px 160px;
+    }
+}

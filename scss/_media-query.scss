@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+
+/*メディアクエリ*/
+    
+//common.scssでの呼び出し
+//    ＠include media-query.mq(引数){}
+
+$breakPoints: (
+    'pc-l': 'screen and(min-width: 1000px)',
+    'pc-s': 'screen and(min-width: 796)',
+    'tab': 'screen and(max-width: 600px) and (min-width: 768px)',
+    'sp': 'screen and (max-width: 599px)',
+) !default;
+
+@mixin mq($breakPoint: pc-s) {
+    @media #{map-get($breakPoints, $breakPoint)} {
+        @content;
+    }
+}

@@ -1,0 +1,60 @@
+
+/* 共通のスタイル */
+@charset"UTF-8";
+
+@use "media-query" as media-query;
+@use "color-set";
+@use "utils";
+
+@use "header";
+@use "nav";
+@use "main";
+@use "profile";
+@use "footer";
+
+@use "anniv";
+
+body{
+
+    header{
+        width: 100%;
+        
+        img{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            object-fit: contain;
+        }
+    }
+
+    main{
+        width: 100%;
+        height: 100%;
+
+        #wrap{
+            width: 92%;
+            max-width: 1152px;
+            margin: 0 auto;
+
+            h1{
+                font-size: 2.3rem;
+            }
+
+            .Container{
+                display: flex;
+                justify-content: center;
+                
+                @media (max-width: 796px){
+                    align-items: center;
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+
+
+    footer{
+        @extend #wrap;
+        max-width: 1280px;
+    }
+}

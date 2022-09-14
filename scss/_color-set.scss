@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+
+//common.scssで関数を呼び出す
+//    ファイル名.関数名(引数);
+
+// カラーコードテンプレ
+$colors: (
+    main: #fff,
+    sub: #fff,
+    accent: #fff,
+    bg: #fff
+);
+@function color($color){
+    @return #{map-get($colors, $color)}
+};

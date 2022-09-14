@@ -1,0 +1,22 @@
+// 3列スタイル　使うかわからん
+// display: grid;に変更予定
+
+.GridStyle{
+    width: 100%;
+    display: grid;
+    justify-content: space-evenly;
+    align-items: center;
+
+    grid-template-columns: 200px 200px 200px 200px;
+
+    @media (max-width: 1000px){
+        grid-template-columns: 200px 200px;
+        grid-template-rows: 240px 260px;
+        justify-content: space-evenly;
+    }
+
+    @media (max-width: 765px) {
+        grid-template-columns: 200px;
+        grid-template-rows: 240px 260px 260px 260px;
+    }
+}

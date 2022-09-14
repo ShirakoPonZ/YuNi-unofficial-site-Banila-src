@@ -1,0 +1,9 @@
+.GridStyle{
+    a{
+        width: 200px;
+
+        img{
+            @extend a;
+        }
+    }
+}
