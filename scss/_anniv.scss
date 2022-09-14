@@ -1,18 +1,57 @@
+// 全体のコンテナ―
 .annivContainer{
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 
+    @media (max-width: 1000px){
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+// 贈呈書コンテナ―
     .ilandImage{
-        width: 40vw;
+        width: 45vw;
+
+        @media (max-width: 1000px){
+            width: 60vw;
+            margin: 0 auto;
+        }
         img{
             width: 100%;
         }
     }
 
-    #participationList{
-        display: grid;
-        justify-content: space-evenly;
-        grid-template-columns: 160px 160px 160px;
+// 概要コンテナー
+    #participationContainer{
+        width: 40vw;
+        line-height: 2em;
+
+        @media (max-width: 1000px) {
+            width: 60vw;
+            margin: 0 auto;
+        }
+
+        p{
+            margin: 0 0 0 16px;
+            @media(max-width: 1000px){
+                width: 60vw;
+                margin: 0 auto;
+                text-align: center;
+            }
+        }
+        #participationList{
+            display: grid;
+            justify-content: flex-start;
+            grid-template-columns: 150px 150px 150px;
+            justify-content: center;
+
+            @media (max-width: 1000px){
+                grid-template-columns: 140px 140px 140px;
+                justify-content: space-evenly;
+                text-align: center;
+            }
+        }
     }
 }
