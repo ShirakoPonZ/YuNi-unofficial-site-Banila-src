@@ -19,7 +19,6 @@ body{
     overflow-x: hidden;
 
     h1{
-        
         margin: 50px 0;
 
         @media (max-width: 1000px){
@@ -54,6 +53,7 @@ body{
             .Container{
                 display: flex;
                 justify-content: center;
+                margin: 50px 0;
                 
                 @media (max-width: 796px){
                     align-items: center;
