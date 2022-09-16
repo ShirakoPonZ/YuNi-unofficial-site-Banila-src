@@ -35,6 +35,11 @@ header img {
   background-color: #fff;
   box-shadow: 2px 2px 15px 2px rgba(0, 0, 0, 0.3);
 }
+@media (max-width: 796px) {
+  #navContainer {
+    display: none;
+  }
+}
 #navContainer img {
   width: 180px;
   margin: 10px 0;
@@ -89,6 +94,25 @@ header img {
   .ClipsContainer {
     grid-template-columns: 45vw;
   }
+}
+@media (max-width: 796px) {
+  .ClipsContainer {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+#moreLink {
+  width: 100%;
+  height: 200px;
+}
+#moreLink button {
+  text-align: center;
+  padding: 10px;
+  color: blue;
+}
+#moreLink button:hover {
+  opacity: 0.6;
 }
 
 .Container {
@@ -164,6 +188,9 @@ header img {
     flex-direction: column;
   }
 }
+.musicContainer .textContainer {
+  width: 500px;
+}
 @media (max-width: 1000px) {
   .musicContainer .textContainer {
     width: 400px;
@@ -199,6 +226,11 @@ body h1 {
 body header {
   width: 100%;
 }
+@media (max-width: 796px) {
+  body header {
+    box-shadow: 2px 2px 15px 2px rgba(0, 0, 0, 0.3);
+  }
+}
 body header img {
   width: 100%;
   height: 100%;
@@ -230,5 +262,15 @@ body main #wrap .Container, body main footer .Container {
   }
 }
 body footer {
-  max-width: 1280px;
+  list-style: none;
+  background-color: #aaa;
+}
+@media (max-width: 1000px) {
+  body footer {
+    padding: 10px 20px;
+  }
+}
+body footer ul {
+  list-style: none;
+  line-height: 1.6em;
 }
