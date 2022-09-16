@@ -1,3 +1,9 @@
+#minContainer{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
 .ClipsContainer{
     display: grid;
     justify-content: space-evenly;
