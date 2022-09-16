@@ -1,7 +1,13 @@
 #minContainer{
     width: 100%;
-    display: flex;
-    justify-content: flex-start;
+    position: fixed;
+    bottom: 0;
+
+    ul{
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+    }
 }
 
 .ClipsContainer{
@@ -14,8 +20,10 @@
     }
 
     @media (max-width: 796px){
+        width: 100%;
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 }
 

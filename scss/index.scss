@@ -49,6 +49,10 @@ body{
             max-width: 1152px;
             margin: 0 auto;
 
+            @media (max-width: 796px){
+                width: 85%;
+            }
+
             h1{
                 font-size: 2.3rem;
             }

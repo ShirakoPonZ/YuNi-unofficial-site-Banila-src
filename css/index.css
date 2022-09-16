@@ -85,6 +85,17 @@ header img {
 .GridStyle a, .GridStyle a img {
   width: 200px;
 }
+#minContainer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+#minContainer ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
 .ClipsContainer {
   display: grid;
   justify-content: space-evenly;
@@ -97,8 +108,10 @@ header img {
 }
 @media (max-width: 796px) {
   .ClipsContainer {
+    width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -251,6 +264,11 @@ body main #wrap, body main footer {
   width: 92%;
   max-width: 1152px;
   margin: 0 auto;
+}
+@media (max-width: 796px) {
+  body main #wrap, body main footer {
+    width: 85%;
+  }
 }
 body main #wrap h1, body main footer h1 {
   font-size: 2.3rem;
