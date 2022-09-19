@@ -11,20 +11,24 @@
 
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
-    <script src="js/common.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   </head>
 
 
 
   <body>
     <header>
-      <img src="img/84.png" alt="ヘッダー画像">
+      <!-- <img src="img/84.png" alt="ヘッダー画像"> -->
+      <div class="swiper-"></div>
+      <img src="img/test.jpg" alt="ヘッダー画像">
     </header>
-
 
 
     <main>
       <!-- ナビゲーション -->
+
       <div id="navContainer">
         <img src="img/YuNi_Logo_cut.png" alt="Logo">
         <nav>
@@ -40,24 +44,69 @@
 
 
       <div id="wrap">
-
-
         <!-- プロフィール -->
-        <h1>Profile</h1>
-        <div class="Container">
-          <div id="illust">
-              <img id="slideImg" src="img/origin.jpg" alt="origin">
 
+        <h1>Profile</h1>
+        <div class="profileContainer">
+          <!-- Slider main container -->
+          <div class="swiper mySwiper2">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <!-- 1枚目 -->
+              <div class="swiper-slide">
+                <img id="slideImg" src="img/origin.jpg" alt="origin">
+              </div>
+              <!-- 2枚目 -->
+              <div class="swiper-slide">
+                <img id="slideImg" src="img/clear.png" alt="clear">
+              </div>
+              <!-- 3枚目 -->
+              <div class="swiper-slide">
+                <img id="slideImg" src="img/autumn_cut.png" alt="autumn">
+              </div>
+              <!-- 4枚目 -->
+              <div class="swiper-slide">
+                <img id="slideImg" src="img/evolve_cut.png" alt="evolve">
+              </div>
+              <!-- 5枚目 -->
+              <div class="swiper-slide">
+                <img id="slideImg" src="img/eternal.png" alt="eternal">
+              </div>
+            </div>
+            <!-- 必要に応じてナビボタン -->
+            <!-- <div class="swiper-button-prev"></div> -->
+            <!-- <div class="swiper-button-next"></div> -->
           </div>
-        <!-- 立ち絵切り替えアイコン -->
-          <div id="icons">
-            <img src="" alt="origin">
-            <img src="" alt="clear">
-            <img src="" alt="autumn">
-            <img src="" alt="evolve">
-            <img src="" alt="eternal">
+          <div class="swiper mySwiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img src="" alt="originアイコン">
+                origin
+              </div>
+
+              <div class="swiper-slide">
+                <img src="" alt="clearアイコン">
+                clear
+              </div>
+              <div class="swiper-slide">
+                <img src="" alt="autumnアイコン">
+                autumn
+              </div>
+              <div class="swiper-slide">
+                <img src="" alt="evolveアイコン">
+                evolve
+              </div>
+              <div class="swiper-slide">
+                <img src="" alt="eternal">
+                eternal
+              </div>
+            </div>
           </div>
         </div>
+
 
         <!-- LInks  アイコンの大きさ検討-->
         <h1>Links</h1>
@@ -99,7 +148,7 @@
         </div>
 
         <div id="moreLink">
-          <button>more →</button>
+          <a href="clips.html"><button>more →</button></a>
         </div>
 
 
@@ -132,6 +181,12 @@
       </div>
     </footer>
 
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
   </body>
+  <script src="js/jquery.js"></script>
+  <script src="js/common.js"></script>
+
 
 </html>
