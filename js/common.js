@@ -47,7 +47,7 @@ function slideTime(){
 
 const Container = document.getElementById("SlideContainer");
 
-
+// ハンバーガーメニュー
 $(function() {
     $('.hamburger').click(function() {
         $(this).toggleClass('active');
@@ -59,35 +59,37 @@ $(function() {
     });
 });
 
+// スライドショー jQuery
+$(function(){
+    $('.slideShow').each(function(){
+        var $slide = $(this).find('img'),
+            slideContent = $slide.length,
+            currentIndex = 0;
+        
+        $slide.eq(currentIndex).fadeIn();
+        setInterval(showNextSlide, 3000);
 
-// スライドショー
+        function showNextSlide(){
+            var nextIndex = (currentIndex + 1) % slideContent;
 
-// // swiper.js
-//     const swiper = new Swiper(".mySwiper", {
-//         spaceBetween: 5,
-//         slidesPerView: 5
-//     });
+            $slide.eq(currentIndex).fadeOut();
+            $slide.eq(nextIndex).fadeIn();
 
-//     const swiper2 = new Swiper(".mySwiper2", {
-//         // 自動再生
-//         autoplay: {
-//             delay: 2000,
-//             stopOnLastSlide: true,
-//             disableOnInteraction: true,
-//         },
+            currentIndex = nextIndex;
+        }
+    });
+});
 
-//         thumbs: {
-//             swiper: swiper
-//         },
 
-        // // ループ設定
-        // loop: true,
+// 立ち絵スライド profile
 
-        // speed: 1000,
+$(function(){
 
-        // ナビゲーション設定
-        // navigation: {
-        //     nextEl: ".swiper-button-next",
-        //     prevEl: ".swiper-button-prev"
-        // }
-    // });
+});
+
+
+// 各タイトルアンダーライン
+
+$(function(){
+
+});

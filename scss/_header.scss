@@ -1,8 +1,29 @@
 header{
 
-    img{
-        width: 400px;
-        height: 250px;
-        margin: 50px;
+    .slideShow{
+        overflow: hidden;
+        position: relative;
+        width: 100vw;
+        height: 70vh;
+    
+        @media (min-width: 1000px){
+            height: 100vh;
+        }
+    
+        @media (max-width: 796px){
+            height: 50vh;
+        }
+    
+        @media (max-width: 500px){
+            height: 30vh;
+        }
+    
+        img{
+            display: none;
+            position: absolute;
+            top: 0;
+            height: 100%;
+            object-fit: cover;
+        }
     }
 }
