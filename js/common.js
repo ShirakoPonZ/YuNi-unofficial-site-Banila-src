@@ -83,8 +83,10 @@ $(function(){
 
 // 立ち絵スライド profile
 
-$(function(){
-
+$(".slide-items").slick({
+    autoplay: true,
+    autoplaySpeed: 200,
+    infinite: true,
 });
 
 

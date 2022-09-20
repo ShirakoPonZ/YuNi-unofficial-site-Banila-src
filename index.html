@@ -13,7 +13,9 @@
     <link rel="stylesheet" type="text/css" href="css/index.css">
 
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
 
 
@@ -43,19 +45,36 @@
         </nav>
       </div>
 
+        <div id="minNavigation">
+          <div id="opener">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <img src="img/YuNi_Logo_cut.png" alt="Logo">
+        </div>
+
 
       <div id="wrap">
         <!-- プロフィール -->
 
         <h1>Profile</h1>
-        <div class="profileContainer">
-          <div class="slideImages">
-            <img src="img/origin.jpg" alt="origin">
-            <img src="img/clear.png" alt="clear">
-            <img src="img/autumn_cut.png" alt="autumn">
-            <img src="img/evolve_cut.png" alt="evolve">
-            <img src="img/eternal.png" alt="eternal">
-          </div>
+        <!-- slickを使う -->
+          <ul class="slide-items">
+            <li><img src="img/origin.jpg" alt="origin"></li>
+            <li><img src="img/clear.png" alt="clear"></li>
+            <li><img src="img/autumn_cut.png" alt="autumn"></li>
+            <li><img src="img/evolve_cut.png" alt="evolve"></li>
+            <li><img src="img/eternal.png" alt="eternal"></li>
+        </ul>
+
+          <!-- <div class="Images">
+            <a class="slide" href="./"><img src="img/origin.jpg" alt="origin"></a>
+            <a class="slide" href="./"><img src="img/clear.png" alt="clear"></a>
+            <a class="slide" href="./"><img src="img/autumn_cut.png" alt="autumn"></a>
+            <a class="slide" href="./"><img src="img/evolve_cut.png" alt="evolve"></a>
+            <a class="slide" href="./"><img src="img/eternal.png" alt="eternal"></a>
+          </div> -->
 
           <div class="profileInt">
             <span>YuNi</span>
@@ -143,5 +162,7 @@
   <script src="js/jquery.js"></script>
   <script src="js/common.js"></script>
 
+<!-- slick -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 </html>

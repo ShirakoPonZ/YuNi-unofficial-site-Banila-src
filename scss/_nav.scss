@@ -49,3 +49,12 @@
     top: 0;
     @extend #navContainer;
 }
+
+#minNavigation{
+    width: 600px;
+
+    img{
+        width: 180px;
+        margin: 10px 0;
+    }
+}
