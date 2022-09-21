@@ -18,11 +18,14 @@
 
         h2{
             line-height: 1.6em;
-            background-color: linear-gradient(transparent 60%, #000, 60%);
+
+            .musicTitle{
+                background: linear-gradient(transparent 60%, #66FFCC 60%);
+            }
         }
 
         p{
-            @extend h2;
+            line-height: 1.6em;
         }
     }
 

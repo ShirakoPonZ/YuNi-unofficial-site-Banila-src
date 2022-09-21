@@ -175,7 +175,7 @@ header .slideShow img {
 @media (max-width: 1000px) {
   .annivContainer .ilandImage {
     width: 60vw;
-    margin: 0 auto;
+    margin: 0 auto 30px auto;
   }
 }
 .annivContainer .ilandImage img {
@@ -235,9 +235,14 @@ header .slideShow img {
     margin-bottom: 20px;
   }
 }
-.musicContainer .textContainer h2, .musicContainer .textContainer p {
+.musicContainer .textContainer h2 {
   line-height: 1.6em;
-  background-color: linear-gradient(transparent 60%, #000, 60%);
+}
+.musicContainer .textContainer h2 .musicTitle {
+  background: linear-gradient(transparent 60%, #66FFCC 60%);
+}
+.musicContainer .textContainer p {
+  line-height: 1.6em;
 }
 .musicContainer iframe {
   width: 500px;
