@@ -11,11 +11,15 @@ header{
         }
     
         @media (max-width: 796px){
+            height: 60vh;
+        }
+
+        @media (max-width: 600px){
             height: 50vh;
         }
     
         @media (max-width: 500px){
-            height: 30vh;
+            height: 40vh;
         }
     
         img{

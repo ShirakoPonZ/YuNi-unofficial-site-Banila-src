@@ -20,12 +20,17 @@ header .slideShow {
 }
 @media (max-width: 796px) {
   header .slideShow {
+    height: 60vh;
+  }
+}
+@media (max-width: 600px) {
+  header .slideShow {
     height: 50vh;
   }
 }
 @media (max-width: 500px) {
   header .slideShow {
-    height: 30vh;
+    height: 40vh;
   }
 }
 header .slideShow img {
@@ -304,12 +309,6 @@ body h1 {
   body h1 {
     text-align: center;
   }
-}
-body header .swiper {
-  width: 100vw;
-}
-body header .swiper .swiper-wrapper .swiper-slide {
-  width: 100vw;
 }
 @media (max-width: 796px) {
   body header {
