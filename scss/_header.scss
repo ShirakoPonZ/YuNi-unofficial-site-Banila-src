@@ -1,25 +1,58 @@
 header{
+    height: 70vh;
+
+    @media (max-width: 1200px){
+        height: 60vh;
+    }
+
+    @media (max-width: 1000px){
+        height: 50vh;
+    }
+
+    @media (max-width: 900px){
+        height: 45vh;
+    }
+
+    @media (max-width: 796px){
+        height: 40vh;
+    }
+
+    @media (max-width: 600px){
+        height: 30vh;
+    }
+
+    @media (max-width: 500px){
+        height: 25vh;
+    }
 
     .slideShow{
         overflow: hidden;
         position: relative;
         width: 100vw;
         height: 70vh;
-    
-        @media (min-width: 1000px){
-            height: 100vh;
-        }
-    
-        @media (max-width: 796px){
+
+        @media (max-width: 1200px){
             height: 60vh;
         }
 
-        @media (max-width: 600px){
+        @media (max-width: 1000px){
             height: 50vh;
+        }
+
+        @media (max-width: 900px){
+            height: 45vh;
+        }
+
+        @media (max-width: 796px){
+            height: 40vh;
+        }
+
+        @media (max-width: 600px){
+            height: 30vh;
         }
     
         @media (max-width: 500px){
-            height: 40vh;
+            height: 25vh;
         }
     
         img{

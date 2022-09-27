@@ -19,6 +19,14 @@ $(function(){
 	});
 });
 
+// $('head').append(
+//     '<style>#wrap{display:none;}'
+// );
+
+// $(window).on("load", function() {
+//     $('#wrap').delay(600).fadeIn("slow");
+// });
+
 
 // 簡易スライド
 // 表示したい画像を配列に入れる
@@ -46,18 +54,6 @@ $(function(){
 
 
 const Container = document.getElementById("SlideContainer");
-
-// ハンバーガーメニュー
-$(function() {
-    $('.hamburger').click(function() {
-        $(this).toggleClass('active');
-        if ($(this).hasClass('active')) {
-            $('.globalMenuSp').addClass('active');
-        } else {
-            $('.globalMenuSp').removeClass('active');
-        }
-    });
-});
 
 // スライドショー jQuery
 $(function(){
@@ -94,4 +90,10 @@ $(".slide-items").slick({
 
 $(function(){
 
+});
+
+
+// ハンバーガーメニュー
+$('.menu-btn').on('click', function(){
+    $('.menu').toggleClass('is-active');
 });
