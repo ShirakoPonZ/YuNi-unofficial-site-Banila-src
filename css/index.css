@@ -20,14 +20,9 @@ header {
     height: 60vh;
   }
 }
-@media (max-width: 900px) {
-  header {
-    height: 50vh;
-  }
-}
 @media (max-width: 796px) {
   header {
-    height: 45vh;
+    height: 50vh;
   }
 }
 @media (max-width: 600px) {
@@ -56,14 +51,9 @@ header .slideShow {
     height: 60vh;
   }
 }
-@media (max-width: 900px) {
-  header .slideShow {
-    height: 50vh;
-  }
-}
 @media (max-width: 796px) {
   header .slideShow {
-    height: 45vh;
+    height: 50vh;
   }
 }
 @media (max-width: 600px) {
