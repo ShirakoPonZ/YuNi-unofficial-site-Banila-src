@@ -6,6 +6,10 @@
     background-color: #fff;
     box-shadow: 2px 2px 15px 2px rgba(#000, 0.3);
 
+    @media(max-width: 796px){
+        align-items: center;
+    }
+
 
     img{
         width: 180px;

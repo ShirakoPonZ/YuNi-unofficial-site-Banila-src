@@ -81,6 +81,11 @@ header .slideShow img {
   background-color: #fff;
   box-shadow: 2px 2px 15px 2px rgba(0, 0, 0, 0.3);
 }
+@media (max-width: 796px) {
+  #navContainer, .sticky {
+    align-items: center;
+  }
+}
 #navContainer img, .sticky img {
   width: 180px;
   margin: 10px 0 10px 10px;
@@ -447,6 +452,46 @@ body footer ul li a:hover {
   opacity: 0.6;
 }
 
+#largeNavigation {
+  display: block;
+}
+@media (max-width: 796px) {
+  #largeNavigation {
+    display: none;
+  }
+}
+
+.hamburger {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  z-index: 99;
+  cursor: pointer;
+  border: 2px solid;
+  border-radius: 5px;
+}
+.hamburger span {
+  background-color: #000;
+  display: block;
+  width: 30px;
+  height: 3px;
+  transition: all 0.5s;
+  border-radius: 4px;
+  margin: 0 auto;
+}
+.hamburger span:nth-child(1) {
+  position: relative;
+  top: 10px;
+}
+.hamburger span:nth-child(2) {
+  position: relative;
+  top: 20px;
+}
+.hamburger span:nth-child(3) {
+  position: relative;
+  top: 30px;
+}
+
 #minNavigation {
   z-index: 3;
   background-color: rgba(0, 0, 0, 0.4);
@@ -454,6 +499,7 @@ body footer ul li a:hover {
   height: 100vh;
   position: fixed;
   top: 0;
+  right: -100vw;
   transition: all 0.5s;
 }
 #minNavigation nav {
@@ -466,6 +512,7 @@ body footer ul li a:hover {
   flex-direction: column;
   justify-content: space-evenly;
   background-color: #fff;
+  margin-left: 25%;
 }
 #minNavigation nav ul li {
   margin-left: 4em;

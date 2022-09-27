@@ -19,6 +19,19 @@ $(function(){
 	});
 });
 
+// ハンバーガーメニュー
+$(function() {
+    $('.hamburger').click(function() {
+        $(this).toggleClass('active');
+
+        if ($(this).hasClass('active')) {
+            $('.globalMenuSp').addClass('active');
+        } else {
+            $('.globalMenuSp').removeClass('active');
+        }
+    });
+});
+
 // $('head').append(
 //     '<style>#wrap{display:none;}'
 // );
@@ -78,17 +91,13 @@ $(function(){
 
 // 立ち絵スライド profile
 
-$(".slide-items").slick({
-    autoplay: true,
-    autoplaySpeed: 200,
-    infinite: true,
-});
+// $(".slide-items").slick({
+//     autoplay: true,
+//     autoplaySpeed: 200,
+//     infinite: true,
+// });
 
 
 // 各タイトルアンダーライン
 
 
-// ハンバーガーメニュー
-$('.menu-btn').on('click', function(){
-    $('.menu').toggleClass('is-active');
-});

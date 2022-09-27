@@ -115,6 +115,49 @@ body{
     }
 }
 
+#largeNavigation{
+    display: block;
+
+    @media(max-width: 796px){
+        display: none;
+    }
+}
+
+.hamburger{
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    z-index: 99;
+    cursor: pointer;
+    border: 2px solid;
+    border-radius: 5px;
+
+    span{
+        background-color: #000;
+        display: block;
+        width: 30px;
+        height: 3px;
+        transition: all 0.5s;
+        border-radius: 4px;
+        margin: 0 auto;
+
+        &:nth-child(1){
+            position: relative;
+            top: 10px;
+        }
+
+        &:nth-child(2){
+            position: relative;
+            top: 20px;
+        }
+
+        &:nth-child(3){
+            position: relative;
+            top: 30px;
+        }
+    }
+}
+
 
 #minNavigation{
     z-index: 3;
@@ -123,6 +166,7 @@ body{
     height: 100vh;
     position: fixed;
     top: 0;
+    right: -100vw;
     transition: all 0.5s;
     // opacity: 0;
 
@@ -136,6 +180,7 @@ body{
             flex-direction: column;
             justify-content: space-evenly;
             background-color: #fff;
+            margin-left: 25%;
 
             li{
                 margin-left: 4em;
