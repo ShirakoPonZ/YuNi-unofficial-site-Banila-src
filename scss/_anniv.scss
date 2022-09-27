@@ -54,7 +54,7 @@
         grid-template-columns: 15vw 15vw 15vw 15vw;
         margin: 0 auto;
         line-height: 3em;
-        // justify-content: space-evenly;
+        justify-content: space-evenly;
 
         @media (max-width: 1200px){
             grid-template-columns: 160px 160px 160px 160px;

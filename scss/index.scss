@@ -92,9 +92,25 @@ body{
             padding: 10px 20px;
         }
 
+        h1{
+            font-size: 1.6rem;
+            text-align: left;
+        }
+
         ul{
             list-style: none;
             line-height: 1.6em;
+            
+            li{
+                a{
+                    color: #000;
+                    text-decoration: none;
+
+                    &:hover{
+                        opacity: 0.6;
+                    }
+                }
+            }
         }
     }
 }
@@ -125,7 +141,7 @@ body{
                 margin-left: 4em;
 
                 a{
-                    font-size: 2rem;
+                    font-size: 1.6rem;
                     text-decoration: none;
 
                     &:hover{
@@ -146,5 +162,3 @@ body{
         }
     }
 }
-
-

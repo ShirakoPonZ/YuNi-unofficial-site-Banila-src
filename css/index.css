@@ -206,6 +206,18 @@ header .slideShow img {
   grid-template-columns: 300px 300px 300px;
 }
 
+.staffs {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+}
+.staffs h1 {
+  background-color: #abffb1;
+}
+.staffs #planStaff {
+  display: flex;
+  flex-direction: column;
+}
+
 #titleContainer {
   width: 100%;
   display: flex;
@@ -249,6 +261,7 @@ header .slideShow img {
   grid-template-columns: 15vw 15vw 15vw 15vw;
   margin: 0 auto;
   line-height: 3em;
+  justify-content: space-evenly;
 }
 @media (max-width: 1200px) {
   .annivContainer #participationList {
@@ -406,9 +419,20 @@ body footer {
     padding: 10px 20px;
   }
 }
+body footer h1 {
+  font-size: 1.6rem;
+  text-align: left;
+}
 body footer ul {
   list-style: none;
   line-height: 1.6em;
+}
+body footer ul li a {
+  color: #000;
+  text-decoration: none;
+}
+body footer ul li a:hover {
+  opacity: 0.6;
 }
 
 #minNavigation {
@@ -435,7 +459,7 @@ body footer ul {
   margin-left: 4em;
 }
 #minNavigation nav ul li a {
-  font-size: 2rem;
+  font-size: 1.6rem;
   text-decoration: none;
 }
 #minNavigation nav ul li a:hover {

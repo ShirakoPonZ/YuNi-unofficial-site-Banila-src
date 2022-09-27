@@ -1,0 +1,13 @@
+.staffs{
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+
+    h1{
+    background-color: #abffb1;
+    }
+
+    #planStaff{
+        display: flex;
+        flex-direction: column;
+    }
+}
