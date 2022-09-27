@@ -11,60 +11,61 @@
     }
 }
 
+
+// 概要コンテナー
+#participationContainer{
+    width: 100%;
+    line-height: 3em;
+    text-align: center;
+    margin: 0 auto;
+
+    p{
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+
+
 // 全体のコンテナ―
 .annivContainer{
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
-
-    @media (max-width: 1000px){
-        justify-content: center;
-        flex-direction: column;
-
-    }
+    flex-direction: column;
+    // justify-content: center;
+        justify-content: flex-start;
+        // align-items: center;
 
 // 贈呈書コンテナ―
     .ilandImage{
-        width: 45vw;
+        width: 60vw;
+        margin: 2em auto;
 
-        @media (max-width: 1000px){
-            width: 60vw;
-            margin: 0 auto 30px auto;
-        }
         img{
             width: 100%;
+            margin: 0 auto;
         }
     }
 
-// 概要コンテナー
-    #participationContainer{
-        width: 40vw;
-        line-height: 2em;
+    #participationList{
+        width: 60vw;
+        display: grid;
+        grid-template-columns: 15vw 15vw 15vw 15vw;
+        margin: 0 auto;
+        line-height: 3em;
+        // justify-content: space-evenly;
 
-        @media (max-width: 1000px) {
-            width: 60vw;
-            margin: 0 auto;
+        @media (max-width: 1200px){
+            grid-template-columns: 160px 160px 160px 160px;
         }
 
-        p{
-            margin: 0 0 0 16px;
-            @media(max-width: 1000px){
-                width: 60vw;
-                margin: 0 auto;
-                text-align: center;
-            }
-        }
-        #participationList{
-            display: grid;
-            justify-content: flex-start;
+        @media (max-width: 1000px){
             grid-template-columns: 150px 150px 150px;
-            justify-content: center;
+        }
 
-            @media (max-width: 1000px){
-                grid-template-columns: 140px 140px 140px;
-                justify-content: space-evenly;
-                text-align: center;
-            }
+        @media (max-width: 600px){
+            grid-template-columns: 150px 150px;
         }
     }
 }

@@ -37,7 +37,6 @@ $(function(){
 // 初期値
 // let num = 1;
 
-// 配列内探索関数
 // function slideTime(){
     // if(num === 4){
     //     num = 0;
@@ -87,10 +86,6 @@ $(".slide-items").slick({
 
 
 // 各タイトルアンダーライン
-
-$(function(){
-
-});
 
 
 // ハンバーガーメニュー

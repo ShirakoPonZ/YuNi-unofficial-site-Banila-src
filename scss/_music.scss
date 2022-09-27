@@ -17,14 +17,16 @@
         }
 
         h2{
+            font-size: 1.4em;
             line-height: 1.6em;
 
             .musicTitle{
-                background: linear-gradient(transparent 60%, #66FFCC 60%);
+                background: linear-gradient(transparent 70%, #abffb1 90%);
             }
         }
 
         p{
+            font-size: 1.2em;
             line-height: 1.6em;
         }
     }
@@ -49,25 +51,30 @@
     @media (max-width: 796px){
         display: grid;
         align-items: center;
-        grid-template-rows: 2rem 2rem 2rem;
+        grid-template-rows: 3rem 3rem 3rem;
         text-align: center;
     }
 
     a{
+        padding: 5px;
+        color: #000;
+        border-radius: 3px;
+
+        @media (max-width: 796px){
+            line-height: 1em;
+        }
+
         // カラーは変える
         &:nth-child(1){
-            color: white;
-            background-color: red;
+            background-color: #ff9393;
         }
 
         &:nth-child(2){
-            color: white;
-            background-color: blue;
+            background-color: #89c4ff;
         }
 
         &:nth-child(3){
-            color: white;
-            background-color: yellow;
+            background-color: #ffff7f;
         }
     }
 }
