@@ -34,8 +34,8 @@
     display: flex;
     flex-direction: column;
     // justify-content: center;
-        justify-content: flex-start;
-        // align-items: center;
+    justify-content: flex-start;
+    // align-items: center;
 
 // 贈呈書コンテナ―
     .ilandImage{
@@ -49,6 +49,7 @@
     }
 
     #participationList{
+        // font-family: ;
         width: 60vw;
         display: grid;
         grid-template-columns: 15vw 15vw 15vw 15vw;

@@ -208,7 +208,9 @@ header .slideShow img {
 
 .staffs {
   display: grid;
-  grid-template-columns: 300px 300px 300px;
+  grid-template-columns: 200px 200px 200px;
+  line-height: 2em;
+  justify-content: space-evenly;
 }
 .staffs h1 {
   background-color: #abffb1;
@@ -413,11 +415,7 @@ body main #wrap .textContainer p, body main footer .textContainer p {
 body footer {
   list-style: none;
   background-color: rgba(171, 255, 177, 0.3);
-}
-@media (max-width: 1000px) {
-  body footer {
-    padding: 10px 20px;
-  }
+  padding: 10px 20px;
 }
 body footer h1 {
   font-size: 1.6rem;
@@ -426,6 +424,9 @@ body footer h1 {
 body footer ul {
   list-style: none;
   line-height: 1.6em;
+}
+body footer ul li {
+  font-size: 0.8em;
 }
 body footer ul li a {
   color: #000;

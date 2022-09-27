@@ -87,10 +87,8 @@ body{
         @extend #wrap;
         list-style: none;
         background-color: rgba(171, 255, 177, 0.3);
+        padding: 10px 20px;
 
-        @media (max-width: 1000px){
-            padding: 10px 20px;
-        }
 
         h1{
             font-size: 1.6rem;
@@ -102,6 +100,8 @@ body{
             line-height: 1.6em;
             
             li{
+                font-size: 0.8em;
+
                 a{
                     color: #000;
                     text-decoration: none;
