@@ -83,10 +83,11 @@ header .slideShow img {
 }
 #navContainer img, .sticky img {
   width: 180px;
-  margin: 10px 0;
+  margin: 10px 0 10px 10px;
 }
 #navContainer nav, .sticky nav {
   width: 100%;
+  margin-right: 10px;
 }
 #navContainer nav ul, .sticky nav ul {
   height: 100%;
@@ -98,6 +99,9 @@ header .slideShow img {
   height: 100%;
   align-items: center;
 }
+#navContainer nav ul li:hover, .sticky nav ul li:hover {
+  background-color: rgba(171, 255, 177, 0.8);
+}
 #navContainer nav ul li a, .sticky nav ul li a {
   display: flex;
   align-items: center;
@@ -108,13 +112,9 @@ header .slideShow img {
   margin: auto 0;
   color: #000;
 }
-#navContainer nav ul li a:hover, .sticky nav ul li a:hover {
-  background-color: rgba(171, 255, 177, 0.8);
-}
 #navContainer nav ul li a:active, .sticky nav ul li a:active {
   position: relative;
   top: 3px;
-  background-color: rgba(171, 255, 177, 0.8);
 }
 
 .sticky {
@@ -212,8 +212,18 @@ header .slideShow img {
   line-height: 2em;
   justify-content: space-evenly;
 }
+.staffs p {
+  font-weight: bold;
+  font-family: "Sawarabi Gothic", sans-serif;
+}
 .staffs h1 {
   background-color: #abffb1;
+}
+.staffs h2 {
+  font-size: 1.3em;
+}
+.staffs h2 span {
+  background: linear-gradient(transparent 70%, #abffb1 90%);
 }
 .staffs #planStaff {
   display: flex;
@@ -263,6 +273,7 @@ header .slideShow img {
   grid-template-columns: 15vw 15vw 15vw 15vw;
   margin: 0 auto;
   line-height: 3em;
+  font-size: 1.1em;
   justify-content: space-evenly;
 }
 @media (max-width: 1200px) {

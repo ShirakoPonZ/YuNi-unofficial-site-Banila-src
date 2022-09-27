@@ -9,11 +9,12 @@
 
     img{
         width: 180px;
-        margin: 10px 0;
+        margin: 10px 0 10px 10px;
     }
     
     nav{
         width: 100%;
+        margin-right: 10px;
         
         @media (max-width: 796px){
             // display: none;
@@ -30,6 +31,10 @@
                 height: 100%;
                 align-items: center;
 
+                &:hover{
+                    background-color: rgba(171, 255, 177, 0.8);
+                }
+
                 a{
                     display: flex;
                     align-items: center;
@@ -40,17 +45,11 @@
                     margin: auto 0;
                     color: #000;
 
-                    &:hover{
-                        background-color: rgba(171, 255, 177, 0.8);
-                    }
-    
                     &:active{
                         position: relative;
                         top: 3px;
-                        background-color: rgba(171, 255, 177, 0.8);
                     }
                 }
-
             }
         }
     }

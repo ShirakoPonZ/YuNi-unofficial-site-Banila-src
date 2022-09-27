@@ -4,8 +4,21 @@
     line-height: 2em;
     justify-content: space-evenly;
 
+    p{
+        font-weight: bold;
+        font-family: 'Sawarabi Gothic', sans-serif;
+    }
+
     h1{
         background-color: #abffb1;
+    }
+
+    h2{
+        font-size: 1.3em;
+
+        span{
+            background: linear-gradient(transparent 70%, #abffb1 90%);
+        }
     }
 
 
