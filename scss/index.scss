@@ -123,12 +123,6 @@ body{
     }
 }
 
-#overlay{
-    position: fixed;
-    display: block;
-    background-color: rgba(0,0,0,0.6);
-}
-
 
 #hamburger{
     width: 50px;
@@ -136,7 +130,7 @@ body{
     background-color: #fff;
     z-index: 99;
     cursor: pointer;
-    border: 2px solid;
+    // border: 2px #aaa solid;
     border-radius: 5px;
     margin-right: 1.5em;
 
@@ -145,7 +139,7 @@ body{
     }
 
     span{
-        background-color: #000;
+        background-color: #aaa;
         display: block;
         width: 30px;
         height: 3px;
@@ -183,7 +177,7 @@ body{
 
 #minNavigation{
     z-index: 3;
-    background-color: rgba(255, 255, 255);
+    background-color: #fff;
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -191,17 +185,41 @@ body{
     right: -100vw;
     transition: all 0.5s;
     // opacity: 0;
-    
+
     #closer{
+        margin: 10px 36px 0 36px;
+        margin-left: 2em;
         width: 50px;
         height: 50px;
-        background-color: #fff;
         z-index: 99;
         cursor: pointer;
-        border: 2px solid;
-        border-radius: 5px;
+        // border: 2px #aaa solid;
+        border-radius: 50%;
         margin-right: 1.5em;
         transition: all 0.5s;
+        background-color: #fff;
+
+        span{
+            background-color: #aaa;
+            display: block;
+            width: 29px;
+            height: 3px;
+            transition: all 0.5s;
+            border-radius: 4px;
+            margin: 0 auto;
+
+            &:nth-child(1){
+                position: relative;
+                top: 15px;
+                transform: rotate(45deg);
+            }
+
+            &:nth-child(2){
+                position: relative;
+                top: 30px;
+                transform: rotate(-45deg);
+            }
+        }
     }
 
     nav{
@@ -223,7 +241,7 @@ body{
 
                 a{
                     display: block;
-                    font-size: 1.6rem;
+                    font-size: 2.2rem;
                     text-decoration: none;
 
                     &:hover{

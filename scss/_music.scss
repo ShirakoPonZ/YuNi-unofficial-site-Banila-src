@@ -16,6 +16,10 @@
             margin-bottom: 20px;
         }
 
+        @media (max-width: 400px){
+            width: 350px;
+        }
+
         h2{
             font-size: 1.4em;
             line-height: 1.6em;
@@ -39,6 +43,11 @@
         @media (max-width: 1000px){
             width: 400px;
             height: 225px;
+        }
+
+        @media (max-width: 500px){
+            width: 350px;
+            height: 194px;
         }
     }
 }
