@@ -42,44 +42,10 @@ $(function() {
         $('body').css({ overflow: "none" });
         $('#hamburger').removeClass('open');
     })
-})
-
-// $('head').append(
-//     '<style>#wrap{display:none;}'
-// );
-
-// $(window).on("load", function() {
-//     $('#wrap').delay(600).fadeIn("slow");
-// });
+});
 
 
-// 簡易スライド
-// 表示したい画像を配列に入れる
-// const imageSrc = ["../img/origin.jpg", "../img/clear.png", "../img/autumn_cut.png", "../img/evolve_cut.png", "../img/eternal.png"];
-// const imageAlt = ["origin", "clear", "autumn", "evolve", "eternal"];
-// console.log(imageSrc);
-
-// 初期値
-// let num = 1;
-
-// function slideTime(){
-    // if(num === 4){
-    //     num = 0;
-    // }else{
-    //     num++;
-    // }
-
-    // document.getElementById("slideImg").alt = imageAlt[num];
-    // document.getElementById("slideImg").src = imageSrc[num];
-// }
-
-// 動かすためのタイマ
-// setInterval(slideTime, 7000);
-
-
-const Container = document.getElementById("SlideContainer");
-
-// スライドショー jQuery
+// ヘッダースライドショー jQuery
 $(function(){
     $('.slideShow').each(function(){
         var $slide = $(this).find('img'),
@@ -102,7 +68,6 @@ $(function(){
 
 
 // 立ち絵スライド profile
-
 $(function(){
     $('.slide').slick({
         accessibility: true,  // tabと矢印キーのナビゲーションを有効
@@ -111,16 +76,12 @@ $(function(){
         draggable: true,  // ドラッグ可能
         arrows: true,
         autoplay: true,
-        autoplaySpeed: 2000,
-        speed: 300,
+        autoplaySpeed: 4000,
+        speed: 1000,
         pauseOnHover: false,
         infinite: true, 
         swipe: true,
         centerPadding: '50px',
     });
 });
-
-
-// 各タイトルアンダーライン
-
 

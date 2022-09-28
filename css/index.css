@@ -175,8 +175,9 @@ header .slideShow img {
 
 .ClipsContainer {
   display: grid;
-  justify-content: space-evenly;
+  justify-content: space-around;
   grid-template-columns: 310px 310px 310px;
+  grid-template-rows: 510px;
 }
 @media (max-width: 1000px) {
   .ClipsContainer {
@@ -217,7 +218,7 @@ header .slideShow img {
 
 .staffs {
   display: grid;
-  grid-template-columns: 300px 300px 300px;
+  grid-template-columns: 400px 400px 400px;
 }
 
 .staffs {
@@ -252,6 +253,11 @@ header .slideShow img {
 .staffs #planStaff {
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 796px) {
+  .staffs #planStaff {
+    align-items: center;
+  }
 }
 
 #titleContainer {
@@ -410,14 +416,10 @@ body {
   font-family: "Sawarabi Gothic", sans-serif;
 }
 body h1 {
+  text-align: center;
   margin: 50px 0;
   font-family: "Knewave", cursive;
   font-family: "Murecho", sans-serif;
-}
-@media (max-width: 1000px) {
-  body h1 {
-    text-align: center;
-  }
 }
 @media (max-width: 796px) {
   body header {
@@ -448,6 +450,7 @@ body main #wrap, body main footer {
 body main #wrap .titleContainer, body main footer .titleContainer {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin: 2em 0;
 }
 @media (max-width: 796px) {
@@ -463,18 +466,6 @@ body main #wrap .titleContainer .largeTitle, body main footer .titleContainer .l
   font-size: 2.3em;
   margin: 0 0.5em;
 }
-body main #wrap .Container, body main footer .Container {
-  display: flex;
-  justify-content: center;
-  margin: 50px 0;
-}
-@media (max-width: 796px) {
-  body main #wrap .Container, body main footer .Container {
-    align-items: center;
-    flex-direction: column;
-  }
-}
-
 footer {
   list-style: none;
   background-color: rgba(171, 255, 177, 0.3);
@@ -643,6 +634,7 @@ footer ul li a:hover {
 #profileContainer {
   width: 100%;
   display: flex;
+  justify-content: space-between;
 }
 @media (max-width: 796px) {
   #profileContainer {
@@ -667,7 +659,7 @@ footer ul li a:hover {
   height: 100%;
 }
 #profileContainer .profileIntContainer {
-  width: 550px;
+  width: 400px;
 }
 @media (max-width: 796px) {
   #profileContainer .profileIntContainer {

@@ -20,15 +20,12 @@ body{
     font-family: 'Sawarabi Gothic', sans-serif;
 
     h1{
+        text-align: center;
         margin: 50px 0;
         
         // google fonts
         font-family: 'Knewave', cursive;
         font-family: 'Murecho', sans-serif;
-
-        @media (max-width: 1000px){
-            text-align: center;
-        }
     }
 
     header{
@@ -63,40 +60,40 @@ body{
                 width: 85%;
             }
 
-.titleContainer{
-    display: flex;
-    align-items: center;
-    margin: 2em 0;
-
-    @media (max-width: 796px){
-        justify-content: center;
-    }
-
-    img{
-        width: 3em;
-        height: 100%;
-    }
-
-    .largeTitle{
-        font-size: 2.3em;
-        margin: 0 0.5em;
-
-        @media (max-width: 796px){
-        }
-    }
-
-}
-
-            .Container{
+            .titleContainer{
                 display: flex;
+                align-items: center;
                 justify-content: center;
-                margin: 50px 0;
-                
+                margin: 2em 0;
+
                 @media (max-width: 796px){
-                    align-items: center;
-                    flex-direction: column;
+                    justify-content: center;
+                }
+
+                img{
+                    width: 3em;
+                    height: 100%;
+                }
+
+                .largeTitle{
+                    font-size: 2.3em;
+                    margin: 0 0.5em;
+
+                    @media (max-width: 796px){
+                    }
                 }
             }
+
+            // .Container{
+            //     display: flex;
+            //     justify-content: center;
+            //     margin: 50px 0;
+                
+            //     @media (max-width: 796px){
+            //         align-items: center;
+            //         flex-direction: column;
+            //     }
+            // }
             }
         }
     }
@@ -299,6 +296,7 @@ body{
 #profileContainer{
     width: 100%;
     display: flex;
+    justify-content: space-between;
 
     @media (max-width: 796px) {
         width: 100%;
@@ -327,7 +325,7 @@ body{
 
 }
     .profileIntContainer{
-        width: 550px;
+        width: 400px;
 
         @media (max-width: 796px){
             width: 100%;
