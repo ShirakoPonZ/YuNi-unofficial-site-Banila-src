@@ -63,15 +63,26 @@ body{
                 width: 85%;
             }
 
+.titleContainer{
+    display: flex;
 
-            .largeTitle{
-                font-size: 2.3rem;
+    img{
+        width: 3em;
+        height: 100%;
+        margin: auto 0;
+    }
 
-                &::before{
-                    // content: '&#9834';
-                    color: rgb(171, 255, 177);
-                }
-            }
+    .largeTitle{
+        font-size: 2.3em;
+        margin-left: 1em;
+
+        &::before{
+            // content: '&#9834';
+            color: rgb(171, 255, 177);
+        }
+    }
+
+}
 
             .Container{
                 display: flex;
@@ -312,17 +323,6 @@ body{
             font-size: 0.9em;
             line-height: 1.6em;
             margin: 0 auto;
-        }
-    }
-}
-
-
-// 立ち絵スライド
-
-
-.slick-dots{
-    li{
-        button{
         }
     }
 }

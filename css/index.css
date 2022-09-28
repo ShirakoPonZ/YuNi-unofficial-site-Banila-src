@@ -445,10 +445,19 @@ body main #wrap, body main footer {
     width: 85%;
   }
 }
-body main #wrap .largeTitle, body main footer .largeTitle {
-  font-size: 2.3rem;
+body main #wrap .titleContainer, body main footer .titleContainer {
+  display: flex;
 }
-body main #wrap .largeTitle::before, body main footer .largeTitle::before {
+body main #wrap .titleContainer img, body main footer .titleContainer img {
+  width: 3em;
+  height: 100%;
+  margin: auto 0;
+}
+body main #wrap .titleContainer .largeTitle, body main footer .titleContainer .largeTitle {
+  font-size: 2.3em;
+  margin-left: 1em;
+}
+body main #wrap .titleContainer .largeTitle::before, body main footer .titleContainer .largeTitle::before {
   color: rgb(171, 255, 177);
 }
 body main #wrap .Container, body main footer .Container {
