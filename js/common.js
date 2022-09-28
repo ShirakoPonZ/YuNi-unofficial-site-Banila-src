@@ -9,8 +9,10 @@ $(function(){
 	$window.on('scroll',function(){
 		if($window.scrollTop() > headerOffsetTop){
 			$header.addClass('sticky');
+            $('#wrap').css({ marginTop: "100px"});
 		} else {
 			$header.removeClass('sticky');
+            $('#wrap').css({ marginTop: "0px"});
 		}
 	});
 
