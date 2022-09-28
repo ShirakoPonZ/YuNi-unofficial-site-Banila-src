@@ -43,6 +43,18 @@ body{
             @media (max-width: 796px){
             }
         }
+
+        #headerLogo{
+            width: 100px;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 98;
+
+            @media (max-width:796px){
+                width: 80px;
+            }
+        }
     }
 
     main{
@@ -203,7 +215,7 @@ body{
         z-index: 99;
         cursor: pointer;
         border-radius: 50%;
-        transition: all 0.5s;
+        // transition: all 0.5s;
         background-color: #fff;
 
         span{
