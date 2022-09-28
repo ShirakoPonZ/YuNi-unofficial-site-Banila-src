@@ -101,11 +101,22 @@ $(function(){
 
 // 立ち絵スライド profile
 
-// $(".slide-items").slick({
-//     autoplay: true,
-//     autoplaySpeed: 200,
-//     infinite: true,
-// });
+$(function(){
+    $('.slide').slick({
+        accessibility: true,  // tabと矢印キーのナビゲーションを有効
+        dots: true,  // 画像下のドット（ページ送り）を表示
+        dotsClass: "customDots",
+        draggable: true,  // ドラッグ可能
+        arrows: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        speed: 300,
+        pauseOnHover: false,
+        infinite: true, 
+        swipe: true,
+        centerPadding: '50px',
+    });
+});
 
 
 // 各タイトルアンダーライン

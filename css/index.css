@@ -131,6 +131,7 @@ header .slideShow img {
 }
 
 .sticky {
+  z-index: 97;
   width: 100vw;
   position: fixed;
   top: 0;
@@ -426,18 +427,6 @@ body h1 {
 body header img {
   width: 100vw;
 }
-body header #headerLogo {
-  width: 100px;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  z-index: 98;
-}
-@media (max-width: 796px) {
-  body header #headerLogo {
-    width: 80px;
-  }
-}
 body main {
   width: 100%;
   height: 100%;
@@ -456,8 +445,11 @@ body main #wrap, body main footer {
     width: 85%;
   }
 }
-body main #wrap h1, body main footer h1 {
+body main #wrap .largeTitle, body main footer .largeTitle {
   font-size: 2.3rem;
+}
+body main #wrap .largeTitle::before, body main footer .largeTitle::before {
+  color: rgb(171, 255, 177);
 }
 body main #wrap .Container, body main footer .Container {
   display: flex;
@@ -625,4 +617,44 @@ footer ul li a:hover {
 }
 #minNavigation nav ul li img {
   max-width: 60%;
+}
+
+#profileContainer {
+  width: 100%;
+  display: flex;
+}
+@media (max-width: 796px) {
+  #profileContainer {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+#profileContainer #slideContainer {
+  margin: 0 auto;
+}
+#profileContainer #slideContainer .slide div {
+  width: 400px;
+}
+@media (max-width: 1000px) {
+  #profileContainer #slideContainer .slide div {
+    width: 300px;
+  }
+}
+#profileContainer #slideContainer .slide div img {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+#profileContainer .profileIntContainer {
+  width: 550px;
+}
+@media (max-width: 796px) {
+  #profileContainer .profileIntContainer {
+    width: 100%;
+  }
+}
+#profileContainer .profileIntContainer .profileInt {
+  font-size: 0.9em;
+  line-height: 1.6em;
+  margin: 0 auto;
 }
