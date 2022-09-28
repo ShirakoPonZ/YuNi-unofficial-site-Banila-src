@@ -331,6 +331,7 @@ header .slideShow img {
 @media (max-width: 400px) {
   .musicContainer .textContainer {
     width: 350px;
+    font-size: 0.8em;
   }
 }
 .musicContainer .textContainer h2 {
@@ -398,8 +399,7 @@ header .slideShow img {
 /* 共通のスタイル */
 body {
   overflow-x: hidden;
-  font-family: "Knewave", cursive;
-  font-family: "Murecho", sans-serif;
+  font-family: "Sawarabi Gothic", sans-serif;
 }
 body h1 {
   margin: 50px 0;
@@ -433,6 +433,10 @@ body main #wrap, body main footer {
     width: 85%;
   }
 }
+body main #wrap nav, body main footer nav {
+  font-family: "Knewave", cursive;
+  font-family: "Murecho", sans-serif;
+}
 body main #wrap h1, body main footer h1 {
   font-size: 2.3rem;
 }
@@ -447,30 +451,28 @@ body main #wrap .Container, body main footer .Container {
     flex-direction: column;
   }
 }
-body main #wrap .textContainer p, body main footer .textContainer p {
-  font-family: "Noto Serif JP", serif;
-}
-body footer {
+
+footer {
   list-style: none;
   background-color: rgba(171, 255, 177, 0.3);
   padding: 10px 20px;
 }
-body footer h1 {
+footer h1 {
   font-size: 1.6rem;
   text-align: left;
 }
-body footer ul {
+footer ul {
   list-style: none;
   line-height: 1.6em;
 }
-body footer ul li {
+footer ul li {
   font-size: 0.8em;
 }
-body footer ul li a {
+footer ul li a {
   color: #000;
   text-decoration: none;
 }
-body footer ul li a:hover {
+footer ul li a:hover {
   opacity: 0.6;
 }
 

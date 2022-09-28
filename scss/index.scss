@@ -17,8 +17,7 @@
 
 body{
     overflow-x: hidden;
-    font-family: 'Knewave', cursive;
-    font-family: 'Murecho', sans-serif;
+    font-family: 'Sawarabi Gothic', sans-serif;
 
     h1{
         margin: 50px 0;
@@ -59,6 +58,11 @@ body{
                 width: 85%;
             }
 
+            nav{
+                font-family: 'Knewave', cursive;
+                font-family: 'Murecho', sans-serif;
+            }
+
             h1{
                 font-size: 2.3rem;
             }
@@ -73,11 +77,6 @@ body{
                     flex-direction: column;
                 }
             }
-
-            .textContainer{
-                p{
-                    font-family: 'Noto Serif JP', serif;
-                }
             }
         }
     }
@@ -113,7 +112,7 @@ body{
             }
         }
     }
-}
+
 
 #largeNavigation{
     display: block;
