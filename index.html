@@ -27,6 +27,10 @@
     <!-- スタイルシート -->
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
+
+    <!-- slick -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
   </head>
 
 
@@ -55,7 +59,7 @@
         </nav>
 
         <!-- ハンバーガーボタン -->
-        <div class="hamburger">
+        <div id="hamburger">
           <span></span>
           <span></span>
           <span></span>
@@ -64,23 +68,31 @@
       </div>
 
 
-
-
       <!-- ハンバーガーメニュー -->
+
         <div id="minNavigation">
+          <div id="navFlexArea">
+            <img src="img/YuNi_Logo_cut.png" alt="Logo">
+
+            <div id="closer">
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+
           <nav>
             <ul>
-              <li><img src="img/YuNi_Logo_cut.png" alt="Logo"></li>
-              <li><a href="#">Top</a></li>
+              <li></li>
+              <li><a href="index.html">Top</a></li>
               <li><a href="music.html">music</a></li>
               <li><a href="anniv.html">YuNiBirth</a></li>
               <li><a href="clips.html">Clips</a></li>
 
               <!-- ページ内リンク -->
-              <li><h2>page menu</h2></li>
+              <!-- <li><h2>page menu</h2></li>
               <li><a href="">Profile</a></li>
               <li><a href="">Clips</a></li>
-              <li><a href="">Staffs</a></li>
+              <li><a href="">Staffs</a></li> -->
             </ul>
           </nav>
         </div>
@@ -91,17 +103,17 @@
 
         <h1>Profile</h1>
         <!-- slickを使う -->
-          <ul class="slide-items">
+          <!-- <ul class="slide-items">
             <li><img src="img/origin.jpg" alt="origin"></li>
             <li><img src="img/clear.png" alt="clear"></li>
             <li><img src="img/autumn_cut.png" alt="autumn"></li>
             <li><img src="img/evolve_cut.png" alt="evolve"></li>
             <li><img src="img/eternal.png" alt="eternal"></li>
-        </ul>
+        </ul> -->
 
           <div class="profileInt">
+            <p>自称「世界初バーシャルシンガー」として、2018年6月に活動を開始する。当時としては珍しい音楽特化のVTuberとして、YouTubeチャンネルにてオリジナル楽曲や歌ってみた動画を中心として投稿している。同年10月にはプライベートレーベルyunion.waveを設立し、自身初となるオリジナル曲「透明声彩」をリリースした。また、2019年4月には初めてのアルバムである「clear / CoLoR」をリリースしている。透明感の中に儚い刹那も入り混じるYuNiの歌声は高く評価されており、劇場オリジナルアニメ「LAIDBACKERS-レイドバッカーズ-」の挿入歌やテレビアニメ「宇崎ちゃんは遊びたい！」エンディングテーマなどアニメソングも担当した。2021年6月にはTOY’S FACTORYよりアルバム「eternal journey」をリリースし、念願のメジャーデビューを果たした。2022年2月にはセルフプロデュース音楽プロジェクトとして「cyAnos」を始動。江口亮をサウンドプロデューサーとして迎え、YuNi個人がプロデューサー兼アーティストとしてひとりの女性の素を出した音楽を創っていく。</p>
           </div>
-
 
           <div class="GridStyle">
             <a href="https://www.youtube.com/c/YuNivirtualsinger" target="_blank" rel="noopener noreferrer">
@@ -243,6 +255,6 @@
   <script src="js/common.js"></script>
 
 <!-- slick -->
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 </html>

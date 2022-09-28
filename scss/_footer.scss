@@ -4,6 +4,14 @@
     line-height: 2em;
     justify-content: space-evenly;
 
+    @media (max-width: 796px){
+        grid-template-columns: 300px 300px;
+    }
+
+    @media (max-width: 600px){
+        grid-template-columns: 300px;
+    }
+
     p{
         font-weight: bold;
         font-family: 'Sawarabi Gothic', sans-serif;

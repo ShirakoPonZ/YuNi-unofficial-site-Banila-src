@@ -84,6 +84,7 @@ header .slideShow img {
 @media (max-width: 796px) {
   #navContainer, .sticky {
     align-items: center;
+    justify-content: space-between;
   }
 }
 #navContainer img, .sticky img {
@@ -216,6 +217,16 @@ header .slideShow img {
   grid-template-columns: 200px 200px 200px;
   line-height: 2em;
   justify-content: space-evenly;
+}
+@media (max-width: 796px) {
+  .staffs {
+    grid-template-columns: 300px 300px;
+  }
+}
+@media (max-width: 600px) {
+  .staffs {
+    grid-template-columns: 300px;
+  }
 }
 .staffs p {
   font-weight: bold;
@@ -461,7 +472,13 @@ body footer ul li a:hover {
   }
 }
 
-.hamburger {
+#overlay {
+  position: fixed;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+#hamburger {
   width: 50px;
   height: 50px;
   background-color: #fff;
@@ -469,8 +486,14 @@ body footer ul li a:hover {
   cursor: pointer;
   border: 2px solid;
   border-radius: 5px;
+  margin-right: 1.5em;
 }
-.hamburger span {
+@media (min-width: 796px) {
+  #hamburger {
+    display: none;
+  }
+}
+#hamburger span {
   background-color: #000;
   display: block;
   width: 30px;
@@ -479,22 +502,32 @@ body footer ul li a:hover {
   border-radius: 4px;
   margin: 0 auto;
 }
-.hamburger span:nth-child(1) {
+#hamburger span:nth-child(1) {
   position: relative;
   top: 10px;
 }
-.hamburger span:nth-child(2) {
+#hamburger span:nth-child(2) {
   position: relative;
   top: 20px;
 }
-.hamburger span:nth-child(3) {
+#hamburger span:nth-child(3) {
   position: relative;
   top: 30px;
 }
 
+.open {
+  display: none;
+}
+
+#navFlexArea {
+  display: flex;
+  width: 100vw;
+  margin-left: 4em;
+}
+
 #minNavigation {
   z-index: 3;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgb(255, 255, 255);
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -502,22 +535,34 @@ body footer ul li a:hover {
   right: -100vw;
   transition: all 0.5s;
 }
+#minNavigation #closer {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  z-index: 99;
+  cursor: pointer;
+  border: 2px solid;
+  border-radius: 5px;
+  margin-right: 1.5em;
+  transition: all 0.5s;
+}
 #minNavigation nav {
-  height: 100vh;
+  height: 100%;
+  width: 100%;
 }
 #minNavigation nav ul {
   width: 75%;
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  background-color: #fff;
-  margin-left: 25%;
+  justify-content: flex-start;
 }
 #minNavigation nav ul li {
+  padding: 30px 0;
   margin-left: 4em;
 }
 #minNavigation nav ul li a {
+  display: block;
   font-size: 1.6rem;
   text-decoration: none;
 }

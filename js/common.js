@@ -21,16 +21,24 @@ $(function(){
 
 // ハンバーガーメニュー
 $(function() {
-    $('.hamburger').click(function() {
-        $(this).toggleClass('active');
+    $('#hamburger').click(function() {
+        $(this).toggleClass('open');
 
-        if ($(this).hasClass('active')) {
-            $('.globalMenuSp').addClass('active');
+        if ($(this).hasClass('open')) {
+            $('#minNavigation').css({ right: 0 });
         } else {
-            $('.globalMenuSp').removeClass('active');
+            $('#minNavigation').css({ right: "-100vw" });
         }
     });
 });
+
+$(function() {
+    $('#closer').click(function() {
+        $('#minNavigation').css({ right: "-100vw" });
+        // $('#hamburger').css({ display: 'block' });
+        $('#hamburger').removeClass('open');
+    })
+})
 
 // $('head').append(
 //     '<style>#wrap{display:none;}'

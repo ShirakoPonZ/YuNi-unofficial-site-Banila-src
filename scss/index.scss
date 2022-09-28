@@ -123,7 +123,14 @@ body{
     }
 }
 
-.hamburger{
+#overlay{
+    position: fixed;
+    display: block;
+    background-color: rgba(0,0,0,0.6);
+}
+
+
+#hamburger{
     width: 50px;
     height: 50px;
     background-color: #fff;
@@ -131,6 +138,11 @@ body{
     cursor: pointer;
     border: 2px solid;
     border-radius: 5px;
+    margin-right: 1.5em;
+
+    @media (min-width: 796px){
+        display: none;
+    }
 
     span{
         background-color: #000;
@@ -158,10 +170,19 @@ body{
     }
 }
 
+.open{
+    display: none;
+}
+
+#navFlexArea{
+    display: flex;
+    width: 100vw;
+    margin-left: 4em;
+}
 
 #minNavigation{
     z-index: 3;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(255, 255, 255);
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -169,23 +190,38 @@ body{
     right: -100vw;
     transition: all 0.5s;
     // opacity: 0;
+    
+    #closer{
+        width: 50px;
+        height: 50px;
+        background-color: #fff;
+        z-index: 99;
+        cursor: pointer;
+        border: 2px solid;
+        border-radius: 5px;
+        margin-right: 1.5em;
+        transition: all 0.5s;
+    }
 
     nav{
-        height: 100vh;
+        height: 100%;
+        width: 100%;
 
         ul{
             width: 75%;
             height: 100%;
             display: flex;
             flex-direction: column;
-            justify-content: space-evenly;
-            background-color: #fff;
-            margin-left: 25%;
+            justify-content: flex-start;
+            // justify-content: space-evenly;
+
 
             li{
+                padding: 30px 0;
                 margin-left: 4em;
 
                 a{
+                    display: block;
                     font-size: 1.6rem;
                     text-decoration: none;
 
