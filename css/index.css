@@ -89,11 +89,15 @@ header .slideShow img {
 }
 #navContainer img, .sticky img {
   width: 180px;
-  margin: 10px 0 10px 10px;
+  margin: 10px 0 10px 30px;
 }
 #navContainer nav, .sticky nav {
   width: 100%;
-  margin-right: 10px;
+}
+@media (max-width: 796px) {
+  #navContainer nav, .sticky nav {
+    margin-right: 10px;
+  }
 }
 #navContainer nav ul, .sticky nav ul {
   height: 100%;
@@ -114,7 +118,7 @@ header .slideShow img {
   height: 100%;
   font-size: 1.3rem;
   text-decoration: none;
-  padding: 0 1em;
+  padding: 0 1.4em;
   margin: auto 0;
   color: #000;
 }
@@ -423,6 +427,10 @@ body main {
   width: 100%;
   height: 100%;
 }
+body main nav {
+  font-family: "Knewave", cursive;
+  font-family: "Murecho", sans-serif;
+}
 body main #wrap, body main footer {
   width: 92%;
   max-width: 1152px;
@@ -432,10 +440,6 @@ body main #wrap, body main footer {
   body main #wrap, body main footer {
     width: 85%;
   }
-}
-body main #wrap nav, body main footer nav {
-  font-family: "Knewave", cursive;
-  font-family: "Murecho", sans-serif;
 }
 body main #wrap h1, body main footer h1 {
   font-size: 2.3rem;
@@ -455,7 +459,9 @@ body main #wrap .Container, body main footer .Container {
 footer {
   list-style: none;
   background-color: rgba(171, 255, 177, 0.3);
-  padding: 10px 20px;
+  padding: 38px 30px;
+  font-family: "Knewave", cursive;
+  font-family: "Murecho", sans-serif;
 }
 footer h1 {
   font-size: 1.6rem;
@@ -463,7 +469,7 @@ footer h1 {
 }
 footer ul {
   list-style: none;
-  line-height: 1.6em;
+  line-height: 1.5em;
 }
 footer ul li {
   font-size: 0.8em;
