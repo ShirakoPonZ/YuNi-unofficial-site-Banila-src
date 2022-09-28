@@ -57,7 +57,7 @@ body{
         #wrap{
             width: 92%;
             max-width: 1152px;
-            margin: 0 auto;
+            margin: 3em auto;
 
             @media (max-width: 796px){
                 width: 85%;
@@ -65,20 +65,23 @@ body{
 
 .titleContainer{
     display: flex;
+    align-items: center;
+    margin: 2em 0;
+
+    @media (max-width: 796px){
+        justify-content: center;
+    }
 
     img{
         width: 3em;
         height: 100%;
-        margin: auto 0;
     }
 
     .largeTitle{
         font-size: 2.3em;
-        margin-left: 1em;
+        margin: 0 0.5em;
 
-        &::before{
-            // content: '&#9834';
-            color: rgb(171, 255, 177);
+        @media (max-width: 796px){
         }
     }
 
@@ -201,7 +204,7 @@ body{
 }
 
 #minNavigation{
-    z-index: 3;
+    z-index: 99;
     background-color: #fff;
     width: 100vw;
     height: 100vh;
