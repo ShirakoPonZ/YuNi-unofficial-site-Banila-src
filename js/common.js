@@ -25,17 +25,19 @@ $(function() {
         $(this).toggleClass('open');
 
         if ($(this).hasClass('open')) {
-            $('#minNavigation').css({ right: 0 });
+            $('#minNavigation').css({ left: 0 });
         } else {
-            $('#minNavigation').css({ right: "-100vw" });
+            // $('#minNavigation').css({ right: "-100vw" });
+            $('#minNavigation').css({ left: "-100vw" });
         }
     });
 });
 
 $(function() {
     $('#closer').click(function() {
-        $('#minNavigation').css({ right: "-100vw" });
-        // $('#hamburger').css({ display: 'block' });
+        // $('#minNavigation').css({ right: "-100vw" });
+        $('#minNavigation').css({ left: "-100vw" });
+        $('body').css({ overflow: "none" });
         $('#hamburger').removeClass('open');
     })
 })
