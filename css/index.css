@@ -87,9 +87,12 @@ header .slideShow img {
     justify-content: space-between;
   }
 }
-#navContainer img, .sticky img {
+#navContainer a img, .sticky a img {
   width: 180px;
   margin: 10px 0 10px 30px;
+}
+#navContainer a img:hover, .sticky a img:hover {
+  opacity: 0.6;
 }
 #navContainer nav, .sticky nav {
   width: 100%;
@@ -538,6 +541,9 @@ footer ul li a:hover {
   margin-top: 2em;
   margin-left: 4em;
 }
+#navFlexArea a img:hover {
+  opacity: 0.6;
+}
 
 #minNavigation {
   z-index: 3;
@@ -594,9 +600,10 @@ footer ul li a:hover {
   margin-left: 4em;
 }
 #minNavigation nav ul li a {
-  display: block;
   font-size: 2.2rem;
   text-decoration: none;
+  color: #000;
+  border-bottom: 2px solid;
 }
 #minNavigation nav ul li a:hover {
   opacity: 0.6;
@@ -604,7 +611,6 @@ footer ul li a:hover {
 #minNavigation nav ul li a:active {
   position: relative;
   top: 3px;
-  color: #000;
 }
 #minNavigation nav ul li img {
   max-width: 60%;
