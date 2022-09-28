@@ -612,13 +612,22 @@ footer ul li a:hover {
 }
 #minNavigation nav ul li {
   padding: 30px 0;
-  margin-left: 4em;
+  margin-left: 2em;
+}
+#minNavigation nav ul li img {
+  width: 2.2em;
+  height: 2.2em;
+  margin: 0 1em 0 0;
 }
 #minNavigation nav ul li a {
   font-size: 2.2rem;
   text-decoration: none;
   color: #000;
   border-bottom: 2px solid;
+}
+#minNavigation nav ul li a::before {
+  width: 2.2em;
+  height: 2.2em;
 }
 #minNavigation nav ul li a:hover {
   opacity: 0.6;
