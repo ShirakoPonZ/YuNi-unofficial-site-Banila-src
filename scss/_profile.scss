@@ -3,6 +3,10 @@
     display: flex;
     justify-content: space-evenly;
 
+    @media (max-width: 900px){
+        justify-content: space-between;
+    }
+
     @media (max-width: 796px) {
         width: 100%;
         flex-direction: column;
@@ -34,7 +38,7 @@
             margin: 0 auto;
             
             @media (max-width:900px) {
-                width: 350px;
+                width: 380px;
             }
 
             @media (max-width: 796px){
@@ -68,11 +72,22 @@
         flex-direction: column;
         justify-content: space-between;
 
+        @media (max-width: 900px){
+            width: 360px;
+        }
+
         @media (max-width: 796px){
             width: 100%;
             margin-top: 2em;
         }
         
+// 公式リンクタイトル
+        .officialLinkTitle{
+            color: #000;
+            text-align: center;
+            margin: 1em;
+        }
+
     // 公式リンク
         .officialLink{
             width: 100%;
@@ -80,15 +95,16 @@
             font-size: 1.3em;
             margin-bottom: 3em;
         }
+
     // プロフィール文
         .profileInt{
             width: 100%;
-            font-size: 0.9em;
+            // font-size: 1em;
             line-height: 1.9em;
             margin: 0 auto;
 
             @media (max-width: 900px){
-                font-size: 0.9em;
+                font-size: 1em;
                 line-height: 1.5em;
                 margin-bottom: 3em;
             }

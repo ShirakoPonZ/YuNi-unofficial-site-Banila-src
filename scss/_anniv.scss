@@ -1,13 +1,30 @@
 // タイトルのコンテナ―
-#titleContainer{
+.YuNiBirthTitle{
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     margin-top: 50px;
 
     .titleImg{
         width: 100px;
         height: 100%;
+
+        @media (max-width: 796px){
+            width: 80px;
+        }
+
+        @media (max-width: 500px) {
+            width: 50px;
+        }
+    }
+
+    h1{
+        font-size: 2.3em;
+
+        @media (max-width: 796px){
+            font-size: 1.8em;
+        }
     }
 }
 
@@ -15,15 +32,37 @@
 // 概要コンテナー
 #participationContainer{
     width: 100%;
-    line-height: 3em;
+    line-height: 2.4em;
     text-align: center;
     margin: 0 auto;
 
-    p{
-        display: block;
+    @media (max-width: 796px){
+        line-height: 2em;
+    }
+
+    p{ 
+        font-size: 0.9em;
         width: 100%;
         margin: 0 auto;
     }
+}
+
+.loadingContainer{
+    height: 60vh;
+    width: 100%;
+
+    .loading{
+        height: 30vh;
+
+        h2{
+            font-size: 1.6em;
+            text-align: center;
+            vertical-align: middle;
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
+    }
+
 }
 
 
@@ -39,8 +78,8 @@
 
 // 贈呈書コンテナ―
     .ilandImage{
-        width: 60vw;
-        margin: 2em auto;
+        width: 50vw;
+        margin: 2em auto 4em auto;
 
         img{
             width: 100%;
@@ -50,24 +89,22 @@
 
     #participationList{
         // font-family: ;
-        width: 60vw;
+        width: 100%;
         display: grid;
-        grid-template-columns: 15vw 15vw 15vw 15vw;
-        margin: 0 auto;
+        // grid-template-columns: 15vw 15vw 15vw 15vw;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: 0 auto 4em auto;
         line-height: 3em;
         font-size: 1.1em;
-        justify-content: space-evenly;
-
-        @media (max-width: 1200px){
-            grid-template-columns: 160px 160px 160px 160px;
-        }
+        justify-items: center;
 
         @media (max-width: 1000px){
-            grid-template-columns: 150px 150px 150px;
+            grid-template-columns: 1fr 1fr 1fr;
+
         }
 
         @media (max-width: 600px){
-            grid-template-columns: 150px 150px;
+            grid-template-columns: 1fr 1fr;
         }
     }
 }

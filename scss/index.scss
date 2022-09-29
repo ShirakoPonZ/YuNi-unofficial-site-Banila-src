@@ -3,14 +3,13 @@
 
 @use "media-query" as media-query;
 @use "color-set";
-@use "utils";
+// @use "utils";
 
 @use "header";
 @use "nav";
 @use "main";
 @use "profile";
 @use "staff";
-@use "footer";
 
 @use "anniv";
 @use "music";
@@ -71,8 +70,12 @@ body{
                 }
 
                 img{
-                    width: 3em;
+                    width: 2.5em;
                     height: 100%;
+                }
+
+                h1{
+                    font-size: 3em;
                 }
 
                 .largeTitle{
@@ -232,4 +235,43 @@ body{
 
 .slick-dots{
     z-index: 96;
+    bottom: -13% !important;
+}
+
+
+.staffs{
+    display: flex;
+    flex-direction: column;
+
+        .Staff{
+
+            h2{
+                font-size: 2.3em;
+                span{
+                    background: linear-gradient(transparent 70%, #abffb1 90%);
+                }
+            }
+
+            p{
+                line-height: 2em;
+            }
+        }
+}
+
+
+
+.StaffContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.planStaff{
+
+    h2{
+
+    }
+    .staffMinContainer{
+        display: flex;
+        }
 }
