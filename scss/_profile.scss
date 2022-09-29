@@ -1,20 +1,73 @@
-#illust{
-    height: 700px;
-    min-width: 500px;
+#profileContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
 
-
-    img{
-        height: 100%;
-        max-width: 100%;
+    @media (max-width: 796px) {
+        width: 100%;
+        flex-direction: column;
     }
+// スライド中身
+#slideContainer{
+    width: 400px;
+    margin: 0 auto;
+
+    @media (max-width: 500px){
+        width: 300px;
+    }
+    
+    // margin: 0 auto;
+
+    .slide{
+
+        div{
+            width: 400px;
+            margin: 0 auto;
+
+            @media (max-width: 500px){
+                width: 300px;
+            }
+
+            img{
+                z-index: 1;
+                width: 95%;
+                height: 100%;
+                margin: 0 auto;
+
+                @media (max-width: 500px){
+
+                }
+            }
+        }
+    }
+
 }
+    .profileIntContainer{
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 
+        @media (max-width: 796px){
+            width: 100%;
+            margin-top: 4em;
+        }
 
-// 切り替えアイコン
-#icons{
-    min-width: 400px;
+        .officialLink{
+            width: 100%;
+            text-align: center;
+            font-size: 1.3em;
+            margin-bottom: 3em;
+        }
 
-    img{
-        max-width: 100%;
+        .profileInt{
+            font-size: 0.9em;
+            line-height: 1.6em;
+            margin: 0 auto;
+
+            @media (max-width: 796px){
+                margin-bottom: 3em;
+            }
+        }
     }
 }

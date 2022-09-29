@@ -72,7 +72,7 @@ $(function(){
     $('.slide').slick({
         accessibility: true,  // tabと矢印キーのナビゲーションを有効
         dots: true,  // 画像下のドット（ページ送り）を表示
-        dotsClass: "customDots",
+        // dotsClass: "customDots",
         draggable: true,  // ドラッグ可能
         arrows: true,
         autoplay: true,
@@ -81,7 +81,7 @@ $(function(){
         pauseOnHover: false,
         infinite: true, 
         swipe: true,
-        centerPadding: '50px',
+        centerPadding: '100px',
     });
 });
 
