@@ -248,7 +248,17 @@ header .slideShow img {
 }
 #profileContainer #slideContainer {
   width: 400px;
-  margin: 0 auto;
+}
+@media (max-width: 900px) {
+  #profileContainer #slideContainer {
+    width: 350px;
+  }
+}
+@media (max-width: 796px) {
+  #profileContainer #slideContainer {
+    margin: 0 auto 3em auto;
+    width: 400px;
+  }
 }
 @media (max-width: 500px) {
   #profileContainer #slideContainer {
@@ -258,6 +268,16 @@ header .slideShow img {
 #profileContainer #slideContainer .slide div {
   width: 400px;
   margin: 0 auto;
+}
+@media (max-width: 900px) {
+  #profileContainer #slideContainer .slide div {
+    width: 350px;
+  }
+}
+@media (max-width: 796px) {
+  #profileContainer #slideContainer .slide div {
+    width: 400px;
+  }
 }
 @media (max-width: 500px) {
   #profileContainer #slideContainer .slide div {
@@ -289,9 +309,17 @@ header .slideShow img {
   margin-bottom: 3em;
 }
 #profileContainer .profileIntContainer .profileInt {
+  width: 100%;
   font-size: 0.9em;
-  line-height: 1.6em;
+  line-height: 1.9em;
   margin: 0 auto;
+}
+@media (max-width: 900px) {
+  #profileContainer .profileIntContainer .profileInt {
+    font-size: 0.9em;
+    line-height: 1.5em;
+    margin-bottom: 3em;
+  }
 }
 @media (max-width: 796px) {
   #profileContainer .profileIntContainer .profileInt {
@@ -299,6 +327,11 @@ header .slideShow img {
   }
 }
 
+@media (max-width: 796px) {
+  .GridStyle {
+    margin-bottom: 3em;
+  }
+}
 .GridStyle a, .GridStyle a img {
   width: 50px;
 }
@@ -315,7 +348,6 @@ header .slideShow img {
   display: grid;
   justify-content: space-around;
   grid-template-columns: 310px 310px 310px;
-  grid-template-rows: 510px;
 }
 @media (max-width: 1000px) {
   .ClipsContainer {
@@ -601,9 +633,15 @@ body main #wrap .titleContainer img, body main footer .titleContainer img {
   height: 100%;
 }
 body main #wrap .titleContainer .largeTitle, body main footer .titleContainer .largeTitle {
-  font-size: 2.3em;
+  font-size: 3em;
   margin: 0 0.5em;
 }
+@media (max-width: 796px) {
+  body main #wrap .titleContainer .largeTitle, body main footer .titleContainer .largeTitle {
+    font-size: 2.3em;
+  }
+}
+
 footer {
   list-style: none;
   background-color: rgba(171, 255, 177, 0.3);

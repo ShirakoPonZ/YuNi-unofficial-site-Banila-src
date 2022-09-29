@@ -12,7 +12,6 @@
     display: grid;
     justify-content: space-around;
     grid-template-columns: 310px 310px 310px;
-    grid-template-rows: 510px;
 
     @media (max-width: 1000px){
         grid-template-columns: 45vw;
