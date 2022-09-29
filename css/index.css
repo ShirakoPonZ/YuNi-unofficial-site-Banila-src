@@ -208,6 +208,7 @@ header .slideShow img {
 #minNavigation nav ul li {
   padding: 30px 0;
   margin-left: 2em;
+  width: 220px;
 }
 #minNavigation nav ul li img {
   width: 2.2em;
@@ -218,7 +219,7 @@ header .slideShow img {
   font-size: 2.2rem;
   text-decoration: none;
   color: #000;
-  border-bottom: 2px solid;
+  border-bottom: 2px solid #abffb1;
 }
 #minNavigation nav ul li a::before {
   width: 2.2em;
