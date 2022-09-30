@@ -355,7 +355,7 @@ header .slideShow img {
   }
 }
 .ClipsContainer:nth-child(5) {
-  margin-bottom: 100px;
+  margin-bottom: 30px;
 }
 
 #moreLink {
@@ -451,9 +451,7 @@ header .slideShow img {
   }
 }
 .staffs h2 span {
-  border-radius: 20px;
-  padding: 5px 20px;
-  background-color: #abffb1;
+  background: linear-gradient(transparent 70%, #abffb1 90%);
 }
 
 .staffMinContainer {
