@@ -313,6 +313,7 @@ body{
 
 
 .GridStyle{
+    display: flex;
 
     @media(max-width:796px){
         margin-bottom: 3em;
