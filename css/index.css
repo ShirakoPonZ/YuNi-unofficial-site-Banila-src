@@ -567,6 +567,11 @@ header .slideShow img {
   text-align: center;
   vertical-align: middle;
 }
+@media (max-width: 796px) {
+  .loadingContainer p {
+    font-size: 1.3em;
+  }
+}
 
 .annivContainer {
   width: 100%;
