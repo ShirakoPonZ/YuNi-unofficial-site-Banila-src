@@ -816,6 +816,8 @@ footer ul li a:hover, footer ul li .GridStyle a img:hover, .GridStyle a footer u
 .staffs {
   width: 100%;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 .staffs .planStaff {
   width: 100%;
@@ -824,8 +826,11 @@ footer ul li a:hover, footer ul li .GridStyle a img:hover, .GridStyle a footer u
 .staffs .planStaff .staffMinContainer {
   display: flex;
 }
+.staffs .planStaff .staffMinContainer .innerContainer {
+  display: flex;
+}
 .staffs .planStaff .columnFirst p span, .staffs .planStaff .columnSecond p span {
-  font-size: 1.2em;
+  font-size: 1.3em;
 }
 @media (max-width: 796px) {
   .staffs .planStaff .columnSecond {
@@ -835,7 +840,7 @@ footer ul li a:hover, footer ul li .GridStyle a img:hover, .GridStyle a footer u
 .staffs h2 {
   font-size: 1.6em;
 }
-@media (max-width: 796) {
+@media (max-width: 796px) {
   .staffs h2 {
     margin-bottom: 1.3em;
   }
@@ -847,7 +852,7 @@ footer ul li a:hover, footer ul li .GridStyle a img:hover, .GridStyle a footer u
 .staffMinContainer {
   display: flex;
   justify-content: space-evenly;
-  width: 80%;
+  width: 100%;
   margin: 30px auto 100px auto;
 }
 @media (max-width: 796px) {
