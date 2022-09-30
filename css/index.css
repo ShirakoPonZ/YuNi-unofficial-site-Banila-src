@@ -761,31 +761,6 @@ footer ul li a:hover, footer ul li .GridStyle a img:hover, .GridStyle a footer u
   bottom: -3% !important;
 }
 
-.staffs {
-  margin-bottom: 100px;
-  display: flex;
-  flex-direction: column;
-}
-.staffs .Staff h2 {
-  font-size: 2.3em;
-}
-.staffs .Staff h2 span {
-  background: linear-gradient(transparent 70%, #abffb1 90%);
-}
-.staffs .Staff p {
-  line-height: 2em;
-}
-
-.StaffContainer {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-}
-
-.planStaff .staffMinContainer {
-  display: flex;
-}
-
 .LinksContainer {
   width: 100%;
   margin-bottom: 100px;
@@ -831,4 +806,65 @@ footer ul li a:hover, footer ul li .GridStyle a img:hover, .GridStyle a footer u
   .GridStyle a, .GridStyle a img {
     width: 60px;
   }
+}
+.largeTitle {
+  font-size: 1.3em;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.staffs {
+  width: 100%;
+  text-align: center;
+}
+.staffs .planStaff {
+  width: 100%;
+  margin: 0 auto;
+}
+.staffs .planStaff .staffMinContainer {
+  display: flex;
+}
+.staffs .planStaff .columnFirst p span, .staffs .planStaff .columnSecond p span {
+  font-size: 1.2em;
+}
+@media (max-width: 796px) {
+  .staffs .planStaff .columnSecond {
+    margin-bottom: 100px;
+  }
+}
+.staffs h2 {
+  font-size: 1.6em;
+}
+@media (max-width: 796) {
+  .staffs h2 {
+    margin-bottom: 1.3em;
+  }
+}
+.staffs h2 span {
+  border: 3px solid;
+}
+
+.staffMinContainer {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+  margin: 30px auto 100px auto;
+}
+@media (max-width: 796px) {
+  .staffMinContainer {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 796px) {
+  .staffMinContainer .Staff {
+    margin-bottom: 100px;
+  }
+}
+.staffMinContainer .Staff h2 {
+  margin-bottom: 1.3em;
+  font-size: 1.8em;
+}
+.staffMinContainer .Staff p span {
+  font-size: 1.3em;
 }
