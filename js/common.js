@@ -39,7 +39,6 @@ $(function() {
     $('#closer').click(function() {
         // $('#minNavigation').css({ right: "-100vw" });
         $('#minNavigation').css({ left: "-100vw" });
-        $('body').css({ overflow: "none" });
         $('#hamburger').removeClass('open');
     })
 });

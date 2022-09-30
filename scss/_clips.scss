@@ -46,3 +46,32 @@
         }
     }
 }
+
+
+// clipsリンク
+.ClipsLink{
+    width: 100%;
+    text-align: center;
+    font-size: 1.3em;
+    margin-bottom: 4em;
+
+    a{
+        color: #000;
+
+        span{
+            border-radius: 20px;
+            background-color: #abffb1;
+            padding: 5px 20px;
+            box-shadow: 2px 2px 3px 0 rgba(1, 74, 3, 0.6);
+
+            &:hover{
+                opacity: 0.6;
+            }
+
+            &:active{
+                position: relative;
+                top: 3px;
+            }
+        }
+    }
+}

@@ -235,11 +235,12 @@ body{
 
 .slick-dots{
     z-index: 96;
-    bottom: -13% !important;
+    bottom: -3% !important;
 }
 
 
 .staffs{
+    margin-bottom: 100px;
     display: flex;
     flex-direction: column;
 
@@ -274,4 +275,54 @@ body{
     .staffMinContainer{
         display: flex;
         }
+}
+
+
+.LinksContainer{
+    width: 100%;
+    margin-bottom: 100px;
+    // 公式リンク
+    .officialLink{
+        width: 100%;
+        text-align: center;
+        font-size: 1.3em;
+        margin: 2.6em 0;
+
+        a{
+            color: #000;
+
+            span{
+                border-radius: 20px;
+                background-color: #abffb1;
+                padding: 5px 20px;
+                box-shadow: 2px 2px 3px 0 rgba(1, 74, 3, 0.6);
+
+                &:hover{
+                    opacity: 0.6;
+                }
+
+                &:active{
+                    position: relative;
+                    top: 3px;
+                }
+            }
+
+        }
+    }
+}
+
+
+.GridStyle{
+
+    @media(max-width:796px){
+        margin-bottom: 3em;
+    }
+
+    a{
+        width: 50px;
+
+        img{
+            @extend a;
+        }
+    }
 }

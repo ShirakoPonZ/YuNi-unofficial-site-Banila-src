@@ -73,7 +73,7 @@ header .slideShow img {
   display: grid;
   justify-content: space-evenly;
   align-items: center;
-  grid-template-columns: 50px 50px 50px 50px;
+  grid-template-columns: 70px 70px 70px 70px;
 }
 #navContainer, .sticky {
   width: 100vw;
@@ -87,11 +87,11 @@ header .slideShow img {
     justify-content: space-between;
   }
 }
-#navContainer a img, .sticky a img {
+#navContainer a img, .GridStyle a #navContainer img img, .sticky a img, .GridStyle a .sticky img img {
   width: 180px;
   margin: 10px 0 10px 30px;
 }
-#navContainer a img:hover, .sticky a img:hover {
+#navContainer a img:hover, .GridStyle a #navContainer img img:hover, .sticky a img:hover, .GridStyle a .sticky img img:hover {
   opacity: 0.6;
 }
 #navContainer nav, .sticky nav {
@@ -115,7 +115,7 @@ header .slideShow img {
 #navContainer nav ul li:hover, .sticky nav ul li:hover {
   background-color: rgba(171, 255, 177, 0.8);
 }
-#navContainer nav ul li a, .sticky nav ul li a {
+#navContainer nav ul li a, #navContainer nav ul li .GridStyle a img, .GridStyle a #navContainer nav ul li img, .sticky nav ul li a, .sticky nav ul li .GridStyle a img, .GridStyle a .sticky nav ul li img {
   display: flex;
   align-items: center;
   height: 100%;
@@ -125,7 +125,7 @@ header .slideShow img {
   margin: auto 0;
   color: #000;
 }
-#navContainer nav ul li a:active, .sticky nav ul li a:active {
+#navContainer nav ul li a:active, #navContainer nav ul li .GridStyle a img:active, .GridStyle a #navContainer nav ul li img:active, .sticky nav ul li a:active, .sticky nav ul li .GridStyle a img:active, .GridStyle a .sticky nav ul li img:active {
   position: relative;
   top: 3px;
 }
@@ -152,7 +152,7 @@ header .slideShow img {
   margin-top: 2em;
   margin-left: 4em;
 }
-#navFlexArea a img:hover {
+#navFlexArea a img:hover, .GridStyle a #navFlexArea img img:hover {
   opacity: 0.6;
 }
 
@@ -215,20 +215,21 @@ header .slideShow img {
   height: 2.2em;
   margin: 0 1em 0 0;
 }
-#minNavigation nav ul li a {
+#minNavigation nav ul li a, #minNavigation nav ul li .GridStyle a img, .GridStyle a #minNavigation nav ul li img {
   font-size: 2.2rem;
   text-decoration: none;
   color: #000;
-  border-bottom: 2px solid #abffb1;
+  border-radius: 3px;
+  border-bottom: 4px solid #abffb1;
 }
-#minNavigation nav ul li a::before {
+#minNavigation nav ul li a::before, #minNavigation nav ul li .GridStyle a img::before, .GridStyle a #minNavigation nav ul li img::before {
   width: 2.2em;
   height: 2.2em;
 }
-#minNavigation nav ul li a:hover {
+#minNavigation nav ul li a:hover, #minNavigation nav ul li .GridStyle a img:hover, .GridStyle a #minNavigation nav ul li img:hover {
   opacity: 0.6;
 }
-#minNavigation nav ul li a:active {
+#minNavigation nav ul li a:active, #minNavigation nav ul li .GridStyle a img:active, .GridStyle a #minNavigation nav ul li img:active {
   position: relative;
   top: 3px;
 }
@@ -238,6 +239,7 @@ header .slideShow img {
 
 #profileContainer {
   width: 100%;
+  margin-bottom: 100px;
   display: flex;
   justify-content: space-evenly;
 }
@@ -314,17 +316,6 @@ header .slideShow img {
     margin-top: 2em;
   }
 }
-#profileContainer .profileIntContainer .officialLinkTitle {
-  color: #000;
-  text-align: center;
-  margin: 1em;
-}
-#profileContainer .profileIntContainer .officialLink {
-  width: 100%;
-  text-align: center;
-  font-size: 1.3em;
-  margin-bottom: 3em;
-}
 #profileContainer .profileIntContainer .profileInt {
   width: 100%;
   line-height: 1.9em;
@@ -343,14 +334,6 @@ header .slideShow img {
   }
 }
 
-@media (max-width: 796px) {
-  .GridStyle {
-    margin-bottom: 3em;
-  }
-}
-.GridStyle a, .GridStyle a img {
-  width: 50px;
-}
 #minContainer {
   width: 100%;
 }
@@ -395,6 +378,29 @@ header .slideShow img {
   position: relative;
   top: 2px;
   opacity: 0.6;
+}
+
+.ClipsLink {
+  width: 100%;
+  text-align: center;
+  font-size: 1.3em;
+  margin-bottom: 4em;
+}
+.ClipsLink a, .ClipsLink .GridStyle a img, .GridStyle a .ClipsLink img {
+  color: #000;
+}
+.ClipsLink a span, .GridStyle a .ClipsLink img span {
+  border-radius: 20px;
+  background-color: #abffb1;
+  padding: 5px 20px;
+  box-shadow: 2px 2px 3px 0 rgba(1, 74, 3, 0.6);
+}
+.ClipsLink a span:hover, .GridStyle a .ClipsLink img span:hover {
+  opacity: 0.6;
+}
+.ClipsLink a span:active, .GridStyle a .ClipsLink img span:active {
+  position: relative;
+  top: 3px;
 }
 
 .Container {
@@ -460,8 +466,6 @@ header .slideShow img {
   font-size: 1.6em;
   text-align: center;
   vertical-align: middle;
-  margin-top: 100px;
-  margin-bottom: 100px;
 }
 
 .annivContainer {
@@ -566,23 +570,23 @@ header .slideShow img {
     text-align: center;
   }
 }
-#winterBerry a {
+#winterBerry a, #winterBerry .GridStyle a img, .GridStyle a #winterBerry img {
   padding: 5px;
   color: #000;
   border-radius: 3px;
 }
 @media (max-width: 796px) {
-  #winterBerry a {
+  #winterBerry a, #winterBerry .GridStyle a img, .GridStyle a #winterBerry img {
     line-height: 1em;
   }
 }
-#winterBerry a:nth-child(1) {
+#winterBerry a:nth-child(1), #winterBerry .GridStyle a img:nth-child(1), .GridStyle a #winterBerry img:nth-child(1) {
   background-color: #ff9393;
 }
-#winterBerry a:nth-child(2) {
+#winterBerry a:nth-child(2), #winterBerry .GridStyle a img:nth-child(2), .GridStyle a #winterBerry img:nth-child(2) {
   background-color: #89c4ff;
 }
-#winterBerry a:nth-child(3) {
+#winterBerry a:nth-child(3), #winterBerry .GridStyle a img:nth-child(3), .GridStyle a #winterBerry img:nth-child(3) {
   background-color: #ffff7f;
 }
 
@@ -669,11 +673,11 @@ footer ul {
 footer ul li {
   font-size: 0.8em;
 }
-footer ul li a {
+footer ul li a, footer ul li .GridStyle a img, .GridStyle a footer ul li img {
   color: #000;
   text-decoration: none;
 }
-footer ul li a:hover {
+footer ul li a:hover, footer ul li .GridStyle a img:hover, .GridStyle a footer ul li img:hover {
   opacity: 0.6;
 }
 
@@ -755,10 +759,11 @@ footer ul li a:hover {
 
 .slick-dots {
   z-index: 96;
-  bottom: -13% !important;
+  bottom: -3% !important;
 }
 
 .staffs {
+  margin-bottom: 100px;
   display: flex;
   flex-direction: column;
 }
@@ -780,4 +785,40 @@ footer ul li a:hover {
 
 .planStaff .staffMinContainer {
   display: flex;
+}
+
+.LinksContainer {
+  width: 100%;
+  margin-bottom: 100px;
+}
+.LinksContainer .officialLink {
+  width: 100%;
+  text-align: center;
+  font-size: 1.3em;
+  margin: 2.6em 0;
+}
+.LinksContainer .officialLink a, .LinksContainer .officialLink .GridStyle a img, .GridStyle a .LinksContainer .officialLink img {
+  color: #000;
+}
+.LinksContainer .officialLink a span, .GridStyle a .LinksContainer .officialLink img span {
+  border-radius: 20px;
+  background-color: #abffb1;
+  padding: 5px 20px;
+  box-shadow: 2px 2px 3px 0 rgba(1, 74, 3, 0.6);
+}
+.LinksContainer .officialLink a span:hover, .GridStyle a .LinksContainer .officialLink img span:hover {
+  opacity: 0.6;
+}
+.LinksContainer .officialLink a span:active, .GridStyle a .LinksContainer .officialLink img span:active {
+  position: relative;
+  top: 3px;
+}
+
+@media (max-width: 796px) {
+  .GridStyle {
+    margin-bottom: 3em;
+  }
+}
+.GridStyle a, .GridStyle a img {
+  width: 50px;
 }
