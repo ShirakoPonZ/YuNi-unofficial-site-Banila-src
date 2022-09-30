@@ -560,13 +560,9 @@ header .slideShow img {
 }
 
 .loadingContainer {
-  height: 60vh;
   width: 100%;
 }
-.loadingContainer .loading {
-  height: 30vh;
-}
-.loadingContainer .loading h2 {
+.loadingContainer p {
   font-size: 1.6em;
   text-align: center;
   vertical-align: middle;

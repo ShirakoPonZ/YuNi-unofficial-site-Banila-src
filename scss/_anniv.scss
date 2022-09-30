@@ -48,20 +48,15 @@
 }
 
 .loadingContainer{
-    height: 60vh;
     width: 100%;
 
-    .loading{
-        height: 30vh;
-
-        h2{
-            font-size: 1.6em;
-            text-align: center;
-            vertical-align: middle;
-        }
+    p{
+        font-size: 1.6em;
+        text-align: center;
+        vertical-align: middle;
     }
-
 }
+
 
 
 
