@@ -404,6 +404,116 @@ header .slideShow img {
   margin: 0 auto;
 }
 
+.largeTitle {
+  font-size: 1.3em;
+  text-align: center;
+  margin-bottom: 40px;
+}
+@media (max-width: 500px) {
+  .largeTitle {
+    font-size: 1.1em;
+  }
+}
+
+.staffs {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.staffs .planStaff {
+  width: 100%;
+  margin: 0 auto;
+}
+.staffs .planStaff .staffMinContainer {
+  display: flex;
+}
+.staffs .planStaff .staffMinContainer .innerContainer {
+  display: flex;
+}
+.staffs .planStaff .columnFirst, .staffs .planStaff .columnSecond {
+  padding: 0 10px;
+}
+.staffs .planStaff .columnFirst p span, .staffs .planStaff .columnSecond p span {
+  font-size: 1.3em;
+}
+@media (max-width: 796px) {
+  .staffs .planStaff .columnSecond {
+    margin-bottom: 100px;
+  }
+}
+.staffs h2 {
+  font-size: 1.6em;
+}
+@media (max-width: 796px) {
+  .staffs h2 {
+    margin-bottom: 1.3em;
+  }
+}
+.staffs h2 span {
+  border-radius: 20px;
+  padding: 5px 20px;
+  background-color: #abffb1;
+}
+
+.staffMinContainer {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 30px auto 100px auto;
+}
+@media (max-width: 796px) {
+  .staffMinContainer {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 796px) {
+  .staffMinContainer .Staff {
+    margin-bottom: 100px;
+  }
+}
+.staffMinContainer .Staff h2 {
+  margin-bottom: 1.3em;
+  font-size: 1.8em;
+}
+.staffMinContainer .Staff h2 span {
+  background: linear-gradient(transparent 70%, #abffb1 90%);
+}
+.staffMinContainer .Staff p {
+  line-height: 1.8em;
+}
+.staffMinContainer .Staff p span {
+  font-size: 1.3em;
+}
+
+.innerContainer {
+  flex-direction: column;
+}
+@media (max-width: 796px) {
+  .innerContainer {
+    align-items: center;
+    flex-direction: column;
+  }
+}
+.innerContainer h2 {
+  margin-bottom: 1.3em;
+}
+.innerContainer .staffName {
+  line-height: 1.6em;
+}
+
+.planFlexArea {
+  width: 260px;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 796px) {
+  .planFlexArea {
+    flex-direction: column;
+  }
+}
+
 .YuNiBirthTitle {
   width: 100%;
   display: flex;
@@ -806,70 +916,4 @@ footer ul li a:hover, footer ul li .GridStyle a img:hover, .GridStyle a footer u
   .GridStyle a, .GridStyle a img {
     width: 60px;
   }
-}
-.largeTitle {
-  font-size: 1.3em;
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.staffs {
-  width: 100%;
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-}
-.staffs .planStaff {
-  width: 100%;
-  margin: 0 auto;
-}
-.staffs .planStaff .staffMinContainer {
-  display: flex;
-}
-.staffs .planStaff .staffMinContainer .innerContainer {
-  display: flex;
-}
-.staffs .planStaff .columnFirst p span, .staffs .planStaff .columnSecond p span {
-  font-size: 1.3em;
-}
-@media (max-width: 796px) {
-  .staffs .planStaff .columnSecond {
-    margin-bottom: 100px;
-  }
-}
-.staffs h2 {
-  font-size: 1.6em;
-}
-@media (max-width: 796px) {
-  .staffs h2 {
-    margin-bottom: 1.3em;
-  }
-}
-.staffs h2 span {
-  border: 3px solid;
-}
-
-.staffMinContainer {
-  display: flex;
-  justify-content: space-evenly;
-  width: 100%;
-  margin: 30px auto 100px auto;
-}
-@media (max-width: 796px) {
-  .staffMinContainer {
-    flex-direction: column;
-    margin: 0 auto;
-  }
-}
-@media (max-width: 796px) {
-  .staffMinContainer .Staff {
-    margin-bottom: 100px;
-  }
-}
-.staffMinContainer .Staff h2 {
-  margin-bottom: 1.3em;
-  font-size: 1.8em;
-}
-.staffMinContainer .Staff p span {
-  font-size: 1.3em;
 }
