@@ -590,7 +590,7 @@ header .slideShow img {
 .annivContainer #participationList {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 0.8fr 0.8fr 0.8fr 0.8fr;
   margin: 0 auto 4em auto;
   line-height: 3em;
   font-size: 1.1em;
@@ -605,6 +605,16 @@ header .slideShow img {
   .annivContainer #participationList {
     grid-template-columns: 1fr 1fr;
   }
+}
+.annivContainer .ImageContainer {
+  width: 60vw;
+  margin: 2em auto;
+  text-align: center;
+}
+.annivContainer .ImageContainer img {
+  width: 100%;
+  height: 100%;
+  text-align: center;
 }
 
 .musicContainer {
@@ -914,5 +924,57 @@ footer ul li a:hover, footer ul li .GridStyle a img:hover, .GridStyle a footer u
 @media (max-width: 500px) {
   .GridStyle a, .GridStyle a img {
     width: 60px;
+  }
+}
+.BannerArea {
+  width: 70vw;
+  margin: 3em auto;
+  -webkit-animation: effect 6s ease 0s infinite;
+          animation: effect 6s ease 0s infinite;
+  max-width: 850px;
+}
+@media (max-width: 500px) {
+  .BannerArea {
+    width: 300px;
+    margin-bottom: 1.6em;
+  }
+}
+@media (max-width: 400px) {
+  .BannerArea {
+    width: 280px;
+  }
+}
+.BannerArea a, .BannerArea .GridStyle a img, .GridStyle a .BannerArea img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.BannerArea a img, .GridStyle a .BannerArea img img {
+  width: 100%;
+  border: 3px solid #abffb1;
+}
+.BannerArea a img:hover, .GridStyle a .BannerArea img img:hover {
+  opacity: 0.7;
+}
+@-webkit-keyframes effect {
+  0% {
+    transform: scale(0.95);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.95);
+  }
+}
+@keyframes effect {
+  0% {
+    transform: scale(0.95);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.95);
   }
 }
