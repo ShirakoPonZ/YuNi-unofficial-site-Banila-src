@@ -949,6 +949,16 @@ footer ul li a:hover, footer ul li .GridStyle a img:hover, .GridStyle a footer u
   width: 100%;
   height: 100%;
 }
+@media (max-width: 500px) {
+  .BannerArea a, .BannerArea .GridStyle a img, .GridStyle a .BannerArea img {
+    width: 300px;
+  }
+}
+@media (max-width: 400px) {
+  .BannerArea a, .BannerArea .GridStyle a img, .GridStyle a .BannerArea img {
+    width: 280px;
+  }
+}
 .BannerArea a img, .GridStyle a .BannerArea img img {
   width: 100%;
   border: 3px solid #abffb1;
